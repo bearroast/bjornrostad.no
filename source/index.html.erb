@@ -6,6 +6,9 @@ title: Bjørn Rostad is a designer
 <%= image_tag 'bearroast.png', class: 'avatar', title: '@bearroast' %>
 <div class="text">
   <h1>Bjørn Rostad</h1>
-  <p>I’m a Norwegian designer based in San Francisco. I currently design <a href="http://shopbanquet.com">Banquet</a> and <a href="http://delectable.com">Delectable</a> for Android and iOS. Previously I’ve worked at <a href="http://codeandtheory.com">Code &amp; Theory</a> and Wheelz (acquired by <a href="http://turo.com">Turo</a>).</p>
-  <p>You can reach me at <a href="mailto:hi@bjornrostad.no">hi@bjornrostad.no<a/> or <a href="http://twitter.com/bearroast">@bearroast</a>  on Twitter.</p>
+  <p>I’m a Norwegian designer based in San Francisco. I currently design <%= link_to 'Banquet', 'http://shopbanquet.com' %>
+    and <%= link_to 'Delectable', 'http://delectable.com' %> for Android and iOS. Previously I’ve worked at
+    <%= link_to 'Code &amp; Theory', 'http://codeandtheory.com' %> and Wheelz (acquired by <%= link_to 'Turo', 'http://turo.com' %>.</p>
+  <p>You can reach me at <%= link_to 'hi@bjornrostad.no', 'mailto:hi@bjornrostad.no' %> or
+    <%= link_to '@bearroast', 'http://twitter.com/bearroast' %>  on Twitter.</p>
 </div>

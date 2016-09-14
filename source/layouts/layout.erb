@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
   <head>
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
@@ -8,11 +7,9 @@
     <title><%= current_page.data.title || "Bjørn Rostad" %></title>
     <meta content="Bjørn Rostad is a designer" name="description">
     <meta content="Bjørn Rostad" name="author">
-    <link rel="shortcut icon" href="favicon.ico">
 
+    <%= favicon_tag 'favicon.ico' %>
     <%= stylesheet_link_tag :site %>
-    <%= javascript_include_tag :all %>
-
   </head>
 
   <body class="<%= page_classes %>">
@@ -29,5 +26,5 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
   </script>
-  
+
 </html>
