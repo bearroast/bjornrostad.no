@@ -56,8 +56,8 @@
   -ms-flex: 0 0 auto;
   -webkit-box-flex: 0;
   flex: 0 0 auto;
-  padding-right: 0;
-  padding-left: 0;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 .col-xs {
@@ -250,6 +250,8 @@
 
 @media only screen and (min-width: 48em) {
   .container {
+    box-sizing: border-box;
+    margin: 0 auto;
     width: 46rem;
   }
 
@@ -465,6 +467,8 @@
 
 @media only screen and (min-width: 62em) {
   .container {
+    box-sizing: border-box;
+    margin: 0 auto;
     width: 61rem;
   }
 
@@ -680,6 +684,8 @@
 
 @media only screen and (min-width: 75em) {
   .container {
+    box-sizing: border-box;
+    margin: 0 auto;
     width: 78rem;
   }
 
