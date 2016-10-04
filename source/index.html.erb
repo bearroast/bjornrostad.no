@@ -4,57 +4,41 @@ title: Bjørn Rostad
 
 <main>
 
-  <section class="intro">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 avatar">
+  <section class="container intro">
+
+        <div class="avatar">
           <%= image_tag 'bearroast.png', class: 'avatar', title: '@bearroast' %>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
+
+        <div class="intro">
           <p>Hello. I'm Bjørn Rostad, an interface designer who currently lives in San Francisco. My focus is on keeping things easy to use, beautiful I’m a Norwegian designer based in San Francisco. I currently design <%= link_to 'Banquet', 'http://shopbanquet.com' %>
             and <%= link_to 'Delectable', 'http://delectable.com' %> for Android and iOS. Previously I’ve worked at
             <%= link_to 'Code &amp; Theory', 'http://codeandtheory.com' %> and Wheelz (acquired by <%= link_to 'Turo', 'http://turo.com' %>.</p>
-          <p>You can reach me at <%= link_to 'hi@bjornrostad.no', 'mailto:hi@bjornrostad.no' %> or
-            <%= link_to '@bearroast', 'http://twitter.com/bearroast' %>  on Twitter.</p>
         </div>
-      </div>
+  </section>
+
+  <section class="container projects">
+    <div class="project project-delectable">
+      <h4>2012-2015</h4>
+      <h2>Delectable for iPhone and Android</h2>
+      <%= link_to 'View Project', '/delectable.html' %>
+    </div>
+
+    <div class="project project-alchemist">
+      <h4>2016</h4>
+      <h2>Alchemist</h2>
+      <%= link_to 'View Project', '/alchemist.html' %>
+    </div>
+
+    <div class="project project-banquet">
+      <h4>2015-2016</h4>
+      <h2>Banquet for iPhone and iPad</h2>
+      <%= link_to 'View Project', '/banquet.html' %>
     </div>
   </section>
 
-  <section class="projects">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <div class="project project-delectable">
-            <h4>2012-2015</h4>
-            <h2>Delectable for iPhone and Android</h2>
-            <%= link_to 'View Project', '/delectable.html' %>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <div class="project project-alchemist">
-            <h4>2016</h4>
-            <h2>Alchemist</h2>
-            <%= link_to 'View Project', '/alchemist.html' %>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <div class="project project-banquet">
-            <h4>2015-2016</h4>
-            <h2>Banquet for iPhone and iPad</h2>
-            <%= link_to 'View Project', '/banquet.html' %>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  
 </main>
-
+<!--
 <footer>
   <div class="container">
     <div class="row">
@@ -64,4 +48,4 @@ title: Bjørn Rostad
       </div>
     </div>
   </div>
-</footer>
+</footer> -->
