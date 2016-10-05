@@ -108,6 +108,7 @@ footer {
 .project {
   height: 430px;
   position: relative;
+  overflow: hidden;
 
   h2 {
     font-size: 2.6rem;
@@ -148,7 +149,7 @@ footer {
   overflow: hidden;
   position: relative;
 }
-.project-banquet {
+.project-banquet-ios, .project-banquet-dashboard {
   .chevron:after {
     background: image-url('chevron-banquet.svg') no-repeat center;
   }
@@ -204,7 +205,10 @@ footer {
 
 
 .project-delectable {
-  background: $project-delectable;
+  background: image-url('project-delectable-pattern.jpg') $project-delectable no-repeat center;
+  @media (-webkit-min-device-pixel-ratio: 1.3) {
+    background: image-url('project-delectable-pattern@2x.jpg') $project-delectable no-repeat center;
+  }
 
   ::selection {
     background: $white;
@@ -221,7 +225,7 @@ footer {
   }
 
 }
-.project-banquet {
+.project-banquet-dashboard {
   background: $project-banquet;
 
   a:hover, a:active {
@@ -229,6 +233,13 @@ footer {
   }
 }
 
+.project-banquet-ios {
+  background: $project-banquet;
+
+  a:hover, a:active {
+    color: $project-banquet;
+  }
+}
 
 .avatar {
   width: 120px;

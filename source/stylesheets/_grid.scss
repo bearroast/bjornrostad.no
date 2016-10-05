@@ -52,7 +52,12 @@
   max-width: 100%;
 }
 
-.project-banquet {
+.project-banquet-dashboard {
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+.project-banquet-ios {
   flex-basis: 100%;
   max-width: 100%;
 }
@@ -77,7 +82,12 @@
     max-width: 50%;
   }
 
-  .project-banquet {
+  .project-banquet-dashboard {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .project-banquet-ios {
     flex-basis: 50%;
     max-width: 50%;
   }
