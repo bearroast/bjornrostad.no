@@ -75,29 +75,24 @@ a:link, a:visited {
   font-weight: 400;
   text-decoration: none;
   border-bottom: 2px solid $gray-2;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-property: all;
 }
 
 a:hover, a:active {
-  color: $gray-5;
+  color: $gray-6;
   text-decoration: none;
-  background: $yellow;
-  border-bottom: 4px solid $yellow;
+  padding-bottom: 2px;
+  border-bottom: 2px solid $gray-3;
   transition-delay: 0s;
-  transition-duration: 0.25s;
+  transition-duration: 0.2s;
   transition-property: all;
 }
 
 footer {
   text-align: center;
   margin: 6rem 0;
-
-  a:link, a:visited {
-    border-bottom: none;
-  }
-
-  a:hover, a:active {
-    border-bottom: none;
-  }
 
   span {
     color: $gray-2;
@@ -106,7 +101,7 @@ footer {
 }
 
 .intro {
-  margin-top: 6rem;
+  margin: 6rem 0;
 }
 
 
@@ -115,7 +110,8 @@ footer {
   position: relative;
 
   h2 {
-    font-size: 34px;
+    font-size: 2.6rem;
+    line-height: 1.4;
     color: $white;
     letter-spacing: 0px;
     font-weight: 300;
@@ -124,12 +120,11 @@ footer {
 
   h4 {
     color: $white;
-    padding: 4rem 1rem 0 1rem;
+    padding: 4rem 1rem 1rem 1rem;
   }
 
   a:link, a:visited {
     color: $white;
-    padding: 1rem 2rem;
     border: 2px solid $white;
     position: absolute;
     bottom: 2rem;
@@ -137,19 +132,61 @@ footer {
     font-weight: 600;
   }
   a:hover, a:active {
-    padding: 1rem 2rem;
     background: $white;
     border: 2px solid $white;
     position: absolute;
     bottom: 2rem;
     left: 2rem;
     font-weight: 600;
+    transition: all 0.2s ease-in-out
+
   }
+}
+
+.chevron {
+  padding: 1rem 2rem;
+  overflow: hidden;
+  position: relative;
+}
+.project-banquet {
+  .chevron:after {
+    background: image-url('chevron-banquet.svg') no-repeat center;
+  }
+}
+
+.project-delectable {
+  .chevron:after {
+    background: image-url('chevron-delectable.svg') no-repeat center;
+  }
+}
+
+.project-alchemist {
+  .chevron:after {
+    background: image-url('chevron-alchemist.svg') no-repeat center;
+  }
+}
+
+.chevron:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 13px;
+  height: 100%;
+  top: 0;
+  right: -2rem;
+  transition: all 0.2s ease-in-out
+}
+
+.chevron:hover:after {
+  right: 1rem
+}
+
+.chevron:hover {
+  padding: 1rem 3rem 1rem 2rem;
 }
 
 .masthead {
   color: $white;
-
 
   h1 {
     margin: 1rem 0 4rem;
