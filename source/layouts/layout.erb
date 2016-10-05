@@ -15,6 +15,13 @@
 
   <body class="<%= page_classes %>">
     <%= yield %>
+
+    <footer>
+      <h5>Get in touch</h5>
+      <p><%= link_to 'Email', 'mailto:hi@bjornrostad.no' %> <span>/</span> <%= link_to 'iMessage', 'imessage:hi@bjornrostad.no' %> <span>/</span> <%= link_to 'Twitter', 'http://twitter.com/bearroast' %></p>
+    </footer>
+
+    
   </body>
 
   <script type="text/javascript">
