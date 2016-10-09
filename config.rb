@@ -12,6 +12,7 @@ configure :build do
   activate :asset_hash
 end
 
+activate :sprockets
 activate :directory_indexes
 activate :relative_assets
 set :relative_links, true

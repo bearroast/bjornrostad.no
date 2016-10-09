@@ -10,19 +10,20 @@
 
     <%= favicon_tag 'favicon.ico' %>
     <%= stylesheet_link_tag :site %>
-    <%= javascript_link_tag :js %>
+    <%= javascript_include_tag 'all'  %>
 
   </head>
 
   <body class="<%= page_classes %>">
-    <%= yield %>
+    <div id="main">
+      <%= yield %>
 
-    <footer>
-      <h5>Get in touch</h5>
-      <p><%= link_to 'Email', 'mailto:hi@bjornrostad.no' %> <span>/</span> <%= link_to 'iMessage', 'imessage:hi@bjornrostad.no' %> <span>/</span> <%= link_to 'Twitter', 'http://twitter.com/bearroast' %></p>
-    </footer>
+      <footer>
+        <h5>Get in touch</h5>
+        <p><%= link_to 'Email', 'mailto:hi@bjornrostad.no' %> <span>/</span> <%= link_to 'iMessage', 'imessage:hi@bjornrostad.no' %> <span>/</span> <%= link_to 'Twitter', 'http://twitter.com/bearroast' %></p>
+      </footer>
 
-
+    </div>
   </body>
 
   <script type="text/javascript">
