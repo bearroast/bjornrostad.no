@@ -1,31 +1,51 @@
 ---
 title: Bjørn Rostad › Designing Delectable
 ---
-<section class="masthead project-delectable">
-  <div class="container">
-    <div class="masthead-image">
-      <%= image_tag 'delectable-masthead.png', :srcset => 'delectable-masthead@2x.png 2x' %>
-    </div>
-    <div class="masthead-text">
-      <h6><%= link_to 'Back', '/index.html' %></h6>
-      <h1>Designing Delectable</h1>
-      <h3>By simply taking a photo of a wine bottle, Delectable‘s image recognition engine will identify the wine in less than one second.</h3>
+
+<nav id="body-nav">
+  <ul>
+    <li><%= link_to 'Delectable Wine', '/delectable.html', :class => "current-page" %></li>
+    <li><%= link_to 'Alchemist Cocktails', '/alchemist.html' %></li>
+    <li><%= link_to 'Banquet Dashboard', '/banquet-dashboard.html' %></li>
+    <li><%= link_to 'Banquet Shopping', '/banquet-ios.html' %></li>
+    <li>-</li>
+    <li><%= link_to 'About', '/about.html' %></li>
+    <li><%= link_to 'Email', 'mailto:hi@bjornrostad.no' %></li>
+    <li><%= link_to 'iMessage', 'imessage:hi@bjornrostad.no' %></li>
+    <li><%= link_to 'Twitter', 'http://twitter.com/bearroast' %></li>
+  </ul>
+</nav>
+
+<div class="site-wrap">
+  <div class="push-wrap">
+    <a href="#" class="toggle-nav">Toggle</a>
+    <section class="masthead project-delectable">
+      <div class="container">
+        <div class="masthead-image">
+          <%= image_tag 'delectable-masthead.png', :srcset => 'delectable-masthead@2x.png 2x' %>
+        </div>
+        <div class="masthead-text">
+          <h6><%= link_to 'Back', '/index.html' %></h6>
+          <h1>Designing Delectable</h1>
+          <h3>By simply taking a photo of a wine bottle, Delectable‘s image recognition engine will identify the wine in less than one second.</h3>
+
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <h2>Product Screen</h2>
+      <p class="feature-description">Wine is complex, and buying wine is even more difficult. So we democratized the industry by letting both wine enthusiasts and experts write and share their tasting notes.</p>
       <p>Wine is complex, and buying wine is even more difficult. So we’ve democratized the industry by letting both wine enthusiasts and experts write and share their tasting notes, and consolidating their reviews in one place. It was a lot of fun to design a product that is useful to both casual wine drinkers and industry experts, who work with wine fulltime as wine makers, journalists and sommeliers at the world‘s top restaurants.</p>
-    </div>
+      <%= image_tag 'http://placehold.it/265x472', :class => 'screen' %>
+      <%= image_tag 'http://placehold.it/265x472', :class => 'screen' %>
+      <%= image_tag 'http://placehold.it/265x472', :class => 'screen' %>
+    </main>
   </div>
-</section>
-
-
-
-<main>
-  <h2>Product Screen</h2>
-  <p class="feature-description">Wine is complex, and buying wine is even more difficult. So we democratized the industry by letting both wine enthusiasts and experts write and share their tasting notes.</p>
 </div>
-<div class="screens">
-  <%= image_tag 'http://placehold.it/265x472', :class => 'screen' %>
-  <%= image_tag 'http://placehold.it/265x472', :class => 'screen' %>
-  <%= image_tag 'http://placehold.it/265x472', :class => 'screen' %>
-</main>
+
+
+
 
 
 
