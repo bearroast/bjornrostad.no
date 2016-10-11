@@ -44,7 +44,7 @@
     border-bottom: none;
   }
   .current-page {
-    background: $yellow;
+    border-bottom: 1px solid $gray-3 !important;
   }
 
   h6 {
