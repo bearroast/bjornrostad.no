@@ -7,7 +7,7 @@ $(function() {
             $('body').removeClass('show-nav').addClass('hide-nav');
             setTimeout(function() {
                 $('body').removeClass('hide-nav');
-            }, 500);
+            }, 1000);
         } else {
             $('body').removeClass('hide-nav').addClass('show-nav');
         }

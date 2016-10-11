@@ -4,47 +4,152 @@
   height: 100%;
 }
 
-#body-nav {
+#fullscreen-menu {
   user-select: none;
   position: fixed;
-  overflow: hidden;
+  overflow-y: scroll;
   top: 0;
   background: transparent;
   display: block;
   transform: translate3d(0,0,0);
-  transition: background 500ms ease;
+  transition: background 0.2s ease;
   z-index: 999999999;
   height: 100%;
-  width: 100%;
-  z-index: -1;
+  width: 0;
 }
 
-.show-nav #body-nav {
-  background: $white;
-  z-index: 1;
-}
-
-.hide-nav #body-nav {
-  background: transparent;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-}
-
-#body-nav ul {
+#fullscreen-menu ul {
   position: absolute;
   left: 12rem;
   width: 100%;
   top: 30%;
-  transform: translateY(-50%);
-}
-#body-nav ul li {
-  display: block;
-  opacity: 0;
-  transition: all 500ms ease;
+  // Fix text blur during animation:
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
-#body-nav {
+#fullscreen-menu ul li {
+  display: block;
+  opacity: 0;
+  transform: translateX(140px);
+  transition: all 0.15s cubic-bezier(0.390, 0.575, 0.565, 1.000);
+}
+
+
+// Enter
+.show-nav #fullscreen-menu {
+  background: $white;
+  z-index: 1;
+  width: 100%;
+	transition: width 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000);
+	transition-delay: 0s;
+}
+
+
+.show-nav #fullscreen-menu .animate-in-1 {
+  transform: translateX(0px);
+  opacity: 1;
+  transition-delay: 0.1s;
+}
+.show-nav #fullscreen-menu .animate-in-2 {
+  transform: translateX(0px);
+  opacity: 1;
+  transition-delay: 0.14s;
+}
+.show-nav #fullscreen-menu .animate-in-3 {
+  transform: translateX(0px);
+  opacity: 1;
+  transition-delay: 0.18s;
+}
+.show-nav #fullscreen-menu .animate-in-4 {
+  transform: translateX(0px);
+  opacity: 1;
+  transition-delay: 0.22s;
+}
+.show-nav #fullscreen-menu .animate-in-5 {
+  transform: translateX(0px);
+  opacity: 1;
+  transition-delay: 0.26s;
+}
+.show-nav #fullscreen-menu .animate-in-6 {
+  transform: translateX(0px);
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+.show-nav #fullscreen-menu .animate-in-7 {
+  transform: translateX(0px);
+  opacity: 1;
+  transition-delay: 0.34s;
+}
+.show-nav #fullscreen-menu .animate-in-8 {
+  transform: translateX(0px);
+  opacity: 1;
+  transition-delay: 0.38s;
+}
+.show-nav #fullscreen-menu .animate-in-9 {
+  transform: translateX(0px);
+  opacity: 1;
+  transition-delay: 0.42s;
+}
+
+
+// Exit
+.hide-nav #fullscreen-menu {
+  background: $white;
+  height: 100%;
+  width: 0;
+  z-index: 1;
+  transition: all 0.15s cubic-bezier(0.390, 0.575, 0.565, 1.000);
+  transition-delay: .4s;
+}
+
+.hide-nav #fullscreen-menu .animate-in-1 {
+  transform: translateX(140px);
+  opacity: 0;
+  transition-delay: 0.42s;
+}
+.hide-nav #fullscreen-menu .animate-in-2 {
+  transform: translateX(140px);
+  opacity: 0;
+  transition-delay: 0.38s;
+}
+.hide-nav #fullscreen-menu .animate-in-3 {
+  transform: translateX(140px);
+  opacity: 0;
+  transition-delay: 0.34s;
+}
+.hide-nav #fullscreen-menu .animate-in-4 {
+  transform: translateX(140px);
+  opacity: 0;
+  transition-delay: 0.3s;
+}
+.hide-nav #fullscreen-menu .animate-in-5 {
+  transform: translateX(140px);
+  opacity: 0;
+  transition-delay: 0.26s;
+}
+.hide-nav #fullscreen-menu .animate-in-6 {
+  transform: translateX(140px);
+  opacity: 0;
+  transition-delay: 0.22s;
+}
+.hide-nav #fullscreen-menu .animate-in-7 {
+  transform: translateX(140px);
+  opacity: 0;
+  transition-delay: 0.18s;
+}
+.hide-nav #fullscreen-menu .animate-in-8 {
+  transform: translateX(140px);
+  opacity: 0;
+  transition-delay: 0.14s;
+}
+.hide-nav #fullscreen-menu .animate-in-9 {
+  transform: translateX(140px);
+  opacity: 0;
+  transition-delay: 0.1s;
+}
+
+#fullscreen-menu {
   a:link, a:visited {
     font-size: 2rem;
     border-bottom: none;
@@ -59,14 +164,10 @@
     background: $yellow;
   }
 }
-.show-nav #body-nav ul li {
-  opacity: 1;
-}
 
 .toggle-nav {
   left: 2rem;
   top: 2rem;
   position: fixed;
   z-index: 9999999999999;
-  color: red !important;
 }

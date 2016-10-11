@@ -2,6 +2,7 @@
 @import "normalize";
 @import "grid";
 @import "color";
+@import "burger";
 @import "nav";
 
 html {
@@ -101,6 +102,53 @@ footer {
     padding: 0 1rem;
   }
 }
+
+
+.burger-icon {
+    @include burger(28px, 2px, 4px, $gray-6, 0, .2s);
+}
+
+button {
+  border: 0;
+  padding: 20px;
+  background: none;
+  -webkit-appearance: none;
+}
+
+button:hover {
+  cursor: pointer;
+  transition: top 0.2s ease-in-out;
+
+    .burger-icon, ::before, ::after {
+        background-color: $gray-6;
+    }
+    ::before {
+      top: -9px;
+      transition: top 0.2s ease-in-out;
+    }
+    ::after {
+      top: 9px;
+      transition: top 0.2s ease-in-out;
+    }
+}
+
+.is-active {
+  ::before {
+    top: -6px;
+    transition: top 0.2s ease-in-out;
+  }
+  ::after {
+    top: 6px;
+    transition: top 0.2s ease-in-out;
+  }
+  
+  .burger-icon {
+    @include burger-to-cross;
+    background-color: transparent !important;
+  }
+}
+
+
 
 .intro {
   margin: 6rem 0;
