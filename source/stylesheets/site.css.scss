@@ -62,9 +62,8 @@ h5 {
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   letter-spacing: 0.88px;
-  text-align: center;
   text-transform: uppercase;
   margin: 0;
 }
@@ -103,11 +102,6 @@ footer {
   }
 }
 
-// .is-active {
-//   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-//     background-color: $gray-6;
-//   }
-// }
 .intro {
   margin: 6rem 0;
   p, a {
@@ -207,10 +201,13 @@ footer {
   h3 {
     margin: 0 0 2rem;
   }
+}
 
-  h6 {
-    color: rgba($white, .8);
-    margin: 0;
+.project-delectable-cover {
+  background: image-url('project-delectable-cover.jpg') $project-delectable no-repeat center;
+  background-size: cover;
+  ::selection {
+    background: $white;
   }
 }
 
