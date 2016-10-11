@@ -19,11 +19,15 @@
   ul {
     position: absolute;
     left: 12rem;
-    top: 10rem;
+    top: 6rem;
     width: 100%;
     // Fix text blur during animation:
     backface-visibility: hidden;
     transform: translateZ(0);
+    :nth-child(6) {
+      margin: 3rem 0 1rem;
+      color: $gray-2;
+    }
   }
 
   ul li {
@@ -31,18 +35,38 @@
     opacity: 0;
     transform: translateX(80px);
     transition: all 0.1s cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    line-height: 2;
   }
 
   a:link, a:visited {
     font-size: 2rem;
+    font-weight: 300;
     border-bottom: none;
   }
 
   a:hover, a:active {
     font-size: 2rem;
+    color: $gray-3;
     padding-bottom: none;
     border-bottom: none;
   }
+  .smaller {
+    a:link, a:visited {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: $gray-3;
+      border-bottom: none;
+    }
+
+    a:hover, a:active {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: $gray-2;
+      padding-bottom: none;
+      border-bottom: none;
+    }
+  }
+
   .current-page {
     border-bottom: 1px solid $gray-3 !important;
   }
@@ -167,15 +191,15 @@
 }
 
 .toggle-nav {
-  right: 6rem;
-  top: 6rem;
+  right: 4rem;
+  top: 4rem;
   position: absolute;
   z-index: 9999999999999;
 }
 
 .toggle-nav.is-active {
-  right: 6rem;
-  top: 6rem;
+  right: 4rem;
+  top: 4rem;
   position: fixed;
   z-index: 9999999999999;
 }

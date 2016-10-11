@@ -1,24 +1,12 @@
 ---
 title: Bjørn Rostad › Designing Delectable
 ---
-
-<nav id="fullscreen-menu">
-  <ul>
-    <li class="animate-in-1"><h6>Selected projects</h6></li>
-    <li class="animate-in-1"><%= link_to 'Delectable Wine', '/delectable.html', :class => "current-page" %></li>
-    <li class="animate-in-2"><%= link_to 'Alchemist Cocktails', '/alchemist.html' %></li>
-    <li class="animate-in-3"><%= link_to 'Banquet Dashboard', '/banquet-dashboard.html' %></li>
-    <li class="animate-in-4"><%= link_to 'Banquet Shopping', '/banquet-ios.html' %></li>
-    <li class="animate-in-5">&mdash;</li>
-    <li class="animate-in-6"><%= link_to 'About', '/about.html' %></li>
-    <li class="animate-in-7"><%= link_to 'Email', 'mailto:hi@bjornrostad.no' %></li>
-    <li class="animate-in-8"><%= link_to 'iMessage', 'imessage:hi@bjornrostad.no' %></li>
-    <li class="animate-in-9"><%= link_to 'Twitter', 'http://twitter.com/bearroast' %></li>
-  </ul>
-</nav>
+<%= partial "layouts/fullscreen-menu" %>
 
 <div class="site-wrap">
   <div class="push-wrap">
+
+    <%= link_to 'Bjørn Rostad', '/index.html', :class => "previous" %>
 
     <button class="toggle-nav hamburger hamburger--collapse" id="hamburger-button" type="button">
       <span class="hamburger-box">
@@ -28,12 +16,11 @@ title: Bjørn Rostad › Designing Delectable
 
     <section class="masthead project-delectable-cover">
       <div class="container">
-        <div class="masthead-image">
-          <%= image_tag 'delectable-masthead.png', :srcset => 'delectable-masthead@2x.png 2x' %>
-        </div>
-        <div class="masthead-text">
-          <h1>Designing Delectable</h1>
-          <h3>By simply taking a photo of a wine bottle, Delectable‘s image recognition engine will identify the wine in less than one second.</h3>
+        <div class="aligner">
+          <div class="masthead-text">
+            <h1>Designing Delectable</h1>
+            <h3>By simply taking a photo of a wine bottle, Delectable‘s image recognition engine will identify the wine in less than one second.</h3>
+          </div>
         </div>
       </div>
     </section>
@@ -52,7 +39,6 @@ title: Bjørn Rostad › Designing Delectable
 </div>
 
 <script>
-// Initiate burger icon
   var hamburger = document.getElementById('hamburger-button');
   hamburger.addEventListener('click', function (e) {
       hamburger.classList.toggle('is-active');
