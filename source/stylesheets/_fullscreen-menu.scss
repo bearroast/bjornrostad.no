@@ -18,14 +18,14 @@
   width: 100%;
   ul {
     position: absolute;
-    left: 12rem;
+    left: 2rem;
     top: 6rem;
     width: 100%;
     // Fix text blur during animation:
     backface-visibility: hidden;
     transform: translateZ(0);
     :nth-child(6) {
-      margin: 3rem 0 1rem;
+      margin: 2rem 0 .4rem;
       color: $gray-2;
     }
   }
@@ -39,13 +39,13 @@
   }
 
   a:link, a:visited {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
     border-bottom: none;
   }
 
   a:hover, a:active {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: $gray-3;
     padding-bottom: none;
     border-bottom: none;
@@ -191,15 +191,72 @@
 }
 
 .toggle-nav {
-  right: 4rem;
-  top: 4rem;
+  box-sizing: border-box;
+  right: 0.8rem;
+  top: 1rem;
   position: absolute;
   z-index: 9999999999999;
 }
 
 .toggle-nav.is-active {
-  right: 4rem;
-  top: 4rem;
+  right: 0.8rem;
+  top: 1rem;
   position: fixed;
   z-index: 9999999999999;
+}
+
+@media only screen and (min-width: 44rem) {
+  .toggle-nav {
+    right: 2rem;
+    top: 2.6rem;
+  }
+  .toggle-nav.is-active {
+    right: 2rem;
+    top: 2.6rem;
+  }
+  #fullscreen-menu {
+    ul {
+      left: 8rem;
+      :nth-child(6) {
+        margin: 3rem 0 1rem;
+      }
+    }
+    a:link, a:visited {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 62rem) {
+  .toggle-nav {
+    right: 3rem;
+    top: 3.6rem;
+  }
+  .toggle-nav.is-active {
+    right: 3rem;
+    top: 3.6rem;
+  }
+  #fullscreen-menu {
+    ul {
+      top: 8rem;
+      left: 10rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 75rem) {
+  .toggle-nav {
+    right: 4rem;
+    top: 4.6rem;
+  }
+  .toggle-nav.is-active {
+    right: 4rem;
+    top: 4.6rem;
+  }
+  #fullscreen-menu {
+    ul {
+      top: 8rem;
+      left: 14rem;
+    }
+  }
 }

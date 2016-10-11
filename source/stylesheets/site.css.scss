@@ -5,6 +5,14 @@
 @import "hamburgers";
 @import "fullscreen-menu";
 
+* {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+}
+
 html {
   font-size: 16px;
 }
@@ -213,14 +221,15 @@ footer {
     color: $project-delectable;
   }
 }
+
 .project-alchemist {
   background: $project-alchemist;
 
   a:hover, a:active {
     color: $project-alchemist;
   }
-
 }
+
 .project-banquet-dashboard {
   background: $project-banquet;
 
@@ -254,8 +263,8 @@ footer {
 }
 
 a.previous {
-  left: 4rem;
-  top: 4.2rem;
+  left: 1rem;
+  top: 1.4rem;
   position: absolute;
   z-index: 9999999999999;
   &:link, &:visited {
@@ -280,23 +289,34 @@ a.previous {
     width: 13px;
     height: 100%;
     top: 0;
-    left: -.2rem;
+    left: -.1rem;
     opacity: 0;
     transition: all 0.2s ease-in-out
   }
 
   &:hover:after {
     opacity: .7;
-    left: -1.2rem
+    left: -.4rem
   }
 }
 
-.screen {
-  border-radius: 4px;
-  box-shadow: 0px 10px 24px 5px rgba(0,0,0,0.12);
+@media only screen and (min-width: 44rem) {
+  a.previous {
+    left: 2rem;
+    top: 2.6rem;
+  }
 }
 
+@media only screen and (min-width: 62rem) {
+  a.previous {
+    left: 3rem;
+    top: 3.6rem;
+  }
+}
 
-.banner, .feature-description {
-  text-align: center;
+@media only screen and (min-width: 75rem) {
+  a.previous {
+    left: 4rem;
+    top: 4.6rem;
+  }
 }
