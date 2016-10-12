@@ -35,7 +35,7 @@
     display: block;
     opacity: 0;
     transform: translateX(80px);
-    transition: all 0.1s cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    transition: all 0.1s cubic-bezier(0.3, 0.6, 0.55, 1.000);
     line-height: 2;
   }
 
@@ -85,7 +85,7 @@
 .show-nav #fullscreen-menu {
   background: $white;
   z-index: 1;
-	transition: background 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000);
+	transition: background 0.3s cubic-bezier(0.3, 0.6, 0.55, 1.000);
 	transition-delay: 0s;
 }
 
@@ -141,8 +141,8 @@
 .hide-nav #fullscreen-menu {
   background: transparent;
   z-index: 1;
-  transition: background 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000);
-  transition-delay: 0.4s;
+  transition: background 0.3s cubic-bezier(0.3, 0.6, 0.55, 1.000);
+  transition-delay: .4s;
 }
 
 .hide-nav #fullscreen-menu .animate-in-1 {

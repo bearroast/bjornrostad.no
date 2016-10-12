@@ -17,7 +17,7 @@
 .aligner {
   display: flex;
   align-items: center;
-  min-height: 44rem;
+  height: 100vh;
   justify-content: center;
 }
 
@@ -54,15 +54,11 @@
   max-width: 100%;
 }
 
-.project-banquet-dashboard {
+.project-banquet {
   flex-basis: 100%;
   max-width: 100%;
 }
 
-.project-banquet-ios {
-  flex-basis: 100%;
-  max-width: 100%;
-}
 
 
 @media only screen and (min-width: 44rem) {
@@ -80,18 +76,13 @@
   }
 
   .project-alchemist {
-    flex-basis: 50%;
-    max-width: 50%;
+    flex-basis: 100%;
+    max-width: 100%;
   }
 
-  .project-banquet-dashboard {
-    flex-basis: 50%;
-    max-width: 50%;
-  }
-
-  .project-banquet-ios {
-    flex-basis: 50%;
-    max-width: 50%;
+  .project-banquet{
+    flex-basis: 100%;
+    max-width: 100%;
   }
 }
 

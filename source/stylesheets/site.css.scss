@@ -32,9 +32,9 @@ body {
 ::selection { background: $yellow; }
 
 h1 {
-  font-weight: 300;
-  font-size: 3.2rem;
-  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 4.2rem;
+  letter-spacing: 2px;
   margin: 0;
 
 }
@@ -132,28 +132,28 @@ footer {
     color: $white;
     letter-spacing: 0px;
     font-weight: 300;
-    padding: 0 1rem;
+    padding: 0 3rem;
   }
 
   h4 {
     color: $white;
-    padding: 4rem 1rem 0 1rem;
+    padding: 7rem 3rem 0 3rem;
   }
 
   a:link, a:visited {
     color: $white;
     border: 2px solid $white;
     position: absolute;
-    bottom: 2rem;
-    left: 2rem;
+    bottom: 4rem;
+    left: 4rem;
     font-weight: 600;
   }
   a:hover, a:active {
     background: $white;
     border: 2px solid $white;
     position: absolute;
-    bottom: 2rem;
-    left: 2rem;
+    bottom: 4rem;
+    left: 4rem;
     font-weight: 600;
     transition: all 0.2s ease-in-out
   }
@@ -164,7 +164,7 @@ footer {
   overflow: hidden;
   position: relative;
 }
-.project-banquet-ios, .project-banquet-dashboard {
+.project-banquet {
   .chevron:after {
     background: image-url('chevron-banquet.svg') no-repeat center;
   }
@@ -203,7 +203,6 @@ footer {
 
 .masthead {
   color: $white;
-  text-shadow: 0px 0px 16px $gray-6;
   h1 {
     margin: 1rem 0 2rem;
     animation-duration: 1.8s;
@@ -221,9 +220,6 @@ footer {
   }
 }
 
-.masthead-text {
-
-}
 
 .project-delectable {
   background: image-url('project-delectable-cover.jpg') $project-delectable no-repeat center;
@@ -238,28 +234,31 @@ footer {
 }
 
 .project-alchemist {
-  background: $project-alchemist;
+  background: image-url('project-alchemist-cover.jpg') $project-alchemist no-repeat center;
+  background-size: cover;
+
+  ::selection {
+    background: $white;
+  }
 
   a:hover, a:active {
     color: $project-alchemist;
   }
 }
 
-.project-banquet-dashboard {
-  background: $project-banquet;
+.project-banquet {
+  background: image-url('project-banquet-cover.jpg') $project-banquet no-repeat center;
+  background-size: cover;
+
+  ::selection {
+    background: $white;
+  }
 
   a:hover, a:active {
     color: $project-banquet;
   }
 }
 
-.project-banquet-ios {
-  background: $project-banquet;
-
-  a:hover, a:active {
-    color: $project-banquet;
-  }
-}
 
 .avatar {
   width: 120px;
@@ -270,12 +269,32 @@ footer {
 }
 
 .project-delectable-cover {
+  height: 100%;
   background: image-url('project-delectable-cover.jpg') $project-delectable no-repeat center;
   background-size: cover;
   ::selection {
     background: $white;
   }
 }
+
+.project-alchemist-cover {
+  height: 100%;
+  background: image-url('project-alchemist-cover.jpg') $project-alchemist no-repeat center;
+  background-size: cover;
+  ::selection {
+    background: $white;
+  }
+}
+
+.project-banquet-cover {
+  height: 100%;
+  background: image-url('project-banquet-cover.jpg') $project-banquet no-repeat center;
+  background-size: cover;
+  ::selection {
+    background: $white;
+  }
+}
+
 
 a.previous {
   left: 1rem;
