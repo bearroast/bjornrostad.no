@@ -2,15 +2,15 @@
   <nav id="fullscreen-menu">
   <ul>
     <li class="animate-in-1"><h6>Selected projects</h6></li>
-    <li class="animate-in-1"><%= link_to 'Delectable Wine', '/delectable.html', :title => "Destroy Wine", :class => "current-page" %></li>
-    <li class="animate-in-2"><%= link_to 'Alchemist Cocktails', '/alchemist.html' %></li>
-    <li class="animate-in-3"><%= link_to 'Banquet Dashboard', '/banquet-dashboard.html' %></li>
-    <li class="animate-in-4"><%= link_to 'Banquet Shopping', '/banquet-ios.html' %></li>
+    <li class="animate-in-1"><%= link_to 'Delectable Wine', 'delectable.html', :class => ('active' if is_page_active('delectable.html')) %></li>
+    <li class="animate-in-2"><%= link_to 'Alchemist Cocktails', 'alchemist.html', :class => ('active' if is_page_active('alchemist.html')) %></li>
+    <li class="animate-in-3"><%= link_to 'Banquet Dashboard', 'banquet-dashboard.html', :class => ('active' if is_page_active('banquet-dashboard.html')) %></li>
+    <li class="animate-in-3"><%= link_to 'Banquet Shopping', 'banquet-ios.html', :class => ('active' if is_page_active('banquet-ios.html')) %></li>
     <li class="animate-in-5 smaller">&mdash;</li>
     <li class="animate-in-6 smaller"><%= link_to 'About', '/about.html' %></li>
     <li class="animate-in-7 smaller"><%= link_to 'Email', 'mailto:hi@bjornrostad.no' %></li>
     <li class="animate-in-8 smaller"><%= link_to 'iMessage', 'imessage:hi@bjornrostad.no' %></li>
     <li class="animate-in-9 smaller"><%= link_to 'Twitter', 'http://twitter.com/bearroast' %></li>
   </ul>
-</nav>
+  </nav>
 </div>

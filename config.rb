@@ -16,3 +16,10 @@ activate :sprockets
 activate :directory_indexes
 activate :relative_assets
 set :relative_links, true
+
+
+helpers do
+  def is_page_active(page)
+    current_page.path == page
+  end
+end
