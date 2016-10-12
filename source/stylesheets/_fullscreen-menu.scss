@@ -8,6 +8,7 @@
   user-select: none;
   position: fixed;
   overflow-y: scroll;
+  overflow-x: hidden;
   top: 0;
   background: transparent;
   display: block;
@@ -19,7 +20,7 @@
   ul {
     position: absolute;
     left: 2rem;
-    top: 6rem;
+    top: 4rem;
     width: 100%;
     // Fix text blur during animation:
     backface-visibility: hidden;
@@ -192,14 +193,16 @@
 
 .toggle-nav {
   box-sizing: border-box;
-  right: 0.8rem;
+  right: 1.6rem;
   top: 1rem;
   position: absolute;
   z-index: 9999999999999;
+  transition: all 0.2s ease-in-out
+
 }
 
 .toggle-nav.is-active {
-  right: 0.8rem;
+  right: 1.6rem;
   top: 1rem;
   position: fixed;
   z-index: 9999999999999;
@@ -207,12 +210,12 @@
 
 @media only screen and (min-width: 44rem) {
   .toggle-nav {
-    right: 2rem;
-    top: 2.6rem;
+    right: 3rem;
+    top: 2.2rem;
   }
   .toggle-nav.is-active {
-    right: 2rem;
-    top: 2.6rem;
+    right: 3rem;
+    top: 2.2rem;
   }
   #fullscreen-menu {
     ul {
@@ -229,12 +232,12 @@
 
 @media only screen and (min-width: 62rem) {
   .toggle-nav {
-    right: 3rem;
-    top: 3.6rem;
+    right: 4rem;
+    top: 3.2rem;
   }
   .toggle-nav.is-active {
-    right: 3rem;
-    top: 3.6rem;
+    right: 4rem;
+    top: 3.2rem;
   }
   #fullscreen-menu {
     ul {
@@ -246,12 +249,12 @@
 
 @media only screen and (min-width: 75rem) {
   .toggle-nav {
-    right: 4rem;
-    top: 4.6rem;
+    right: 5rem;
+    top: 4.2rem;
   }
   .toggle-nav.is-active {
-    right: 4rem;
-    top: 4.6rem;
+    right: 5rem;
+    top: 4.2rem;
   }
   #fullscreen-menu {
     ul {

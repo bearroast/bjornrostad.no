@@ -1,0 +1,54 @@
+#fullscreen-menu-toggle {
+	cursor: pointer;
+  position: absolute;
+	display: block;
+  width: 2.2rem;
+  height: 3rem;
+  padding-top: 1.4rem;
+  background-color: transparent;
+  border: 0;
+  overflow: visible;
+  &:hover {
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+  }
+
+  span:after, span:before {
+  	content: "";
+  	position: absolute;
+  	left: 0;
+  	top: -11px;
+  }
+
+  span:after{
+  	top: 11px;
+  }
+
+  span {
+  	position: relative;
+  	display: block;
+  }
+
+  span, span:after, span:before {
+    display: block;
+  	width: 100%;
+  	height: 2px;
+  	background-color: $white;
+  	transition: all 0.3s;
+  	backface-visibility: hidden;
+  }
+
+  &.is-active span {
+  	background-color: transparent;
+  }
+
+  &.is-active span:before {
+    background-color: $gray-5;
+  	transform: rotate(45deg) translate(5px, 8px);
+  }
+
+  &.is-active span:after {
+    background-color: $gray-5;
+  	transform: rotate(-45deg) translate(7px, -11px);
+  }
+}

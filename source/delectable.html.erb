@@ -8,16 +8,15 @@ title: Bjørn Rostad › Designing Delectable
 
     <%= link_to 'Bjørn Rostad', '/index.html', :class => "previous" %>
 
-    <button class="toggle-nav hamburger hamburger--collapse" id="hamburger-button" type="button">
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
+    <a id="fullscreen-menu-toggle" class="toggle-nav">
+      <span>
       </span>
-    </button>
+    </a>
 
     <section class="masthead project-delectable-cover">
       <div class="container">
         <div class="aligner">
-          <div class="masthead-text">
+          <div class="masthead-text animated infinite fadeInUp">
             <h1>Designing Delectable</h1>
             <h3>By simply taking a photo of a wine bottle, Delectable‘s image recognition engine will identify the wine in less than one second.</h3>
           </div>
@@ -39,7 +38,7 @@ title: Bjørn Rostad › Designing Delectable
 </div>
 
 <script>
-  var hamburger = document.getElementById('hamburger-button');
+  var hamburger = document.getElementById('fullscreen-menu-toggle');
   hamburger.addEventListener('click', function (e) {
       hamburger.classList.toggle('is-active');
       e.preventDefault();
