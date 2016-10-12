@@ -25,7 +25,7 @@
     // Fix text blur during animation:
     backface-visibility: hidden;
     transform: translateZ(0);
-    :nth-child(6) {
+    :nth-child(5) {
       margin: 2rem 0 .4rem;
       color: $gray-2;
     }
@@ -220,7 +220,7 @@
   #fullscreen-menu {
     ul {
       left: 8rem;
-      :nth-child(6) {
+      :nth-child(5) {
         margin: 3rem 0 1rem;
       }
     }

@@ -1,19 +1,42 @@
 ---
-title: Bjørn Rostad › Designing Alchemist
+title: Bjørn Rostad › Alchemist Cocktails
 ---
 
-<div class="container">
-  <div class="banner">
-    <%= image_tag 'http://placehold.it/896x486' %>
-  </div>
-  <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <h6>iPhone + Code</h6>
-      <h1>Alchemist</h1>
-      <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1">
-        <h3>By simply taking a photo of a wine bottle, Delectable‘s image recognition engine will identify the wine in less than one second.</h3>
-        <p>Wine is complex, and buying wine is even more difficult. So we’ve democratized the industry by letting both wine enthusiasts and experts write and share their tasting notes, and consolidating their reviews in one place. It was a lot of fun to design a product that is useful to both casual wine drinkers and industry experts, who work with wine fulltime as wine makers, journalists and sommeliers at the world‘s top restaurants.</p>
+<%= partial "layouts/fullscreen-menu" %>
+
+<div class="site-wrap">
+  <div class="push-wrap">
+
+    <%= link_to 'Bjørn Rostad', '/index.html', :class => "previous" %>
+
+    <a id="fullscreen-menu-toggle" class="toggle-nav">
+      <span>
+      </span>
+    </a>
+
+    <section class="masthead project-alchemist-cover">
+      <div class="container">
+        <div class="aligner">
+          <div class="masthead-text">
+            <h1>Alchemist Cocktails</h1>
+            <h3>Decription</h3>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <main>
+      <div class="container">
+        <p>Content</p>
+      </div>
+    </main>
   </div>
 </div>
+
+<script>
+  var hamburger = document.getElementById('fullscreen-menu-toggle');
+  hamburger.addEventListener('click', function (e) {
+      hamburger.classList.toggle('is-active');
+      e.preventDefault();
+  });
+</script>
