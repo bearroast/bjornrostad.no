@@ -192,6 +192,10 @@
 }
 
 .toggle-nav {
+  animation-delay: 1.4s;
+  animation-duration: 1.8s;
+  animation-name: fadeInNav;
+  animation-fill-mode: both;
   box-sizing: border-box;
   right: 1.6rem;
   top: 1rem;

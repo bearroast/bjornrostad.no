@@ -297,6 +297,10 @@ footer {
 
 
 a.previous {
+  animation-delay: 1.4s;
+  animation-duration: 1.8s;
+  animation-name: fadeInNav;
+  animation-fill-mode: both;
   left: 1rem;
   top: 1.4rem;
   position: absolute;
