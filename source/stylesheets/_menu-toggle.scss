@@ -1,18 +1,17 @@
 #fullscreen-menu-toggle {
   -webkit-user-select: none;
 	cursor: pointer;
-  position: absolute;
-	display: block;
   width: 2.2rem;
   height: 3rem;
   padding-top: 1.4rem;
+  padding-bottom: 0;
   background-color: transparent;
   border: 0;
-  overflow: visible;
-
   &:hover {
-    opacity: 0.7;
-    transition: opacity 0.2s ease;
+    span, span:after, span:before {
+      background-color: rgba($white, 0.7);
+    }
+    transition: opacity 0.2s ease-in;
   }
 
   span:after, span:before {
@@ -28,7 +27,6 @@
 
   span {
   	position: relative;
-  	display: block;
   }
 
   span, span:after, span:before {
@@ -37,7 +35,6 @@
   	height: 2px;
   	background-color: $white;
   	transition: all 0.3s;
-  	backface-visibility: hidden;
   }
 
   &.is-active span {
@@ -52,5 +49,13 @@
   &.is-active span:after {
     background-color: $gray-5;
   	transform: rotate(-45deg) translate(7px, -11px);
+  }
+  &.is-active {
+    &:hover {
+      span:after, span:before {
+        background-color: rgba($gray-5, 0.7);
+      }
+      transition: opacity 0.2s ease-in;
+    }
   }
 }

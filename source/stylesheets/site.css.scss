@@ -295,10 +295,10 @@ footer {
   }
 }
 
-
 a.previous {
-  animation-delay: 1.4s;
-  animation-duration: 1.8s;
+  -webkit-user-select: none;
+  animation-delay: 1s;
+  animation-duration: 1.2s;
   animation-name: fadeInNav;
   animation-fill-mode: both;
   left: 1rem;
