@@ -223,7 +223,7 @@ footer {
     animation-duration: 1s;
     animation-name: fadeInHeader;
     animation-fill-mode: both;
-    margin: 0 0 0 2rem;
+    margin: 0;
   }
 
   .badge-1 {
@@ -352,6 +352,19 @@ a.previous {
   }
 }
 
+
+.project-overview {
+  border-bottom: 2px solid $gray-1;
+  padding: 2rem 0;
+  text-align: center;
+  h5 {
+    font-size: 0.9rem;
+    color: $gray-3;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+}
 @media only screen and (min-width: 44rem) {
   a.previous {
     left: 2rem;

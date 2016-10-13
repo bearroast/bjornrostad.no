@@ -64,6 +64,13 @@
 }
 
 
+.overview-box {
+  flex-basis: 33%;
+  max-width: 33%;
+}
+
+
+
 
 @media only screen and (min-width: 44rem) {
   .container {
@@ -87,6 +94,17 @@
   .project-banquet{
     flex-basis: 100%;
     max-width: 100%;
+  }
+
+  .masthead-text {
+    h1 {
+      padding-right: 2rem;
+      padding-left: 0rem;
+    }
+    h3 {
+      padding-right: 20rem;
+      padding-left: 0rem;
+    }
   }
 }
 
