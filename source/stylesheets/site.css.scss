@@ -202,21 +202,35 @@ footer {
 }
 
 .masthead {
-  color: $white;
   h1 {
     margin: 1rem 0 2rem;
+    animation-delay: 0.4s;
     animation-duration: 1.8s;
     animation-name: fadeInHeader;
     animation-fill-mode: both;
+    color: $white;
   }
 
   h3 {
-    animation-delay: 0.2s;
+    animation-delay: 0.4s;
     animation-duration: 1.8s;
     animation-name: fadeInHeader;
     animation-fill-mode: both;
-    margin: 0 0 2rem;
+    margin: 0 0 6rem;
     color: rgba($white, .9);
+  }
+  img {
+    animation-duration: 1s;
+    animation-name: fadeInHeader;
+    animation-fill-mode: both;
+    margin: 0 0 0 2rem;
+  }
+
+  .badge-1 {
+        animation-delay: 1.4s;
+  }
+  .badge-2 {
+        animation-delay: 1.6s;
   }
 }
 

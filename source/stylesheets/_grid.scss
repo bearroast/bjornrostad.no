@@ -24,8 +24,12 @@
 .masthead-text {
   box-sizing: border-box;
   flex-basis: 100%;
-  h1, h3 {
+  h1 {
     padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  h3 {
+    padding-right: 18rem;
     padding-left: 2rem;
   }
 }
