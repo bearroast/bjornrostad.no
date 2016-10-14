@@ -17,7 +17,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 18px;
 }
 body {
   font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
@@ -103,6 +103,7 @@ a:hover, a:active {
 }
 
 footer {
+  font-size: 1.4rem;
   text-align: center;
   margin: 6rem 0;
 
@@ -113,7 +114,6 @@ footer {
 }
 
 .intro {
-  margin: 6rem 0;
   p, a {
     font-size: 1.4rem;
 
@@ -123,7 +123,6 @@ footer {
 
 
 .project {
-  height: 32rem;
   position: relative;
   overflow: hidden;
 
@@ -277,11 +276,16 @@ footer {
 
 
 .avatar {
-  width: 120px;
-  height: 120px;
+
+  box-sizing: border-box;
+  flex-basis: 100%;
   margin: 4rem auto;
   text-align: center;
   user-select: none;
+  img {
+    width: 8rem;
+    height: 8rem;
+  }
 }
 
 .project-delectable-cover {
@@ -313,7 +317,7 @@ footer {
 
 a.previous {
   -webkit-user-select: none;
-  animation-delay: 1s;
+  animation-delay: .8s;
   animation-duration: 1.2s;
   animation-name: fadeInNav;
   animation-fill-mode: both;
@@ -322,14 +326,14 @@ a.previous {
   position: absolute;
   z-index: 9999999999999;
   &:link, &:visited {
-    color: $white;
+    color: rgba($white, .6);
     padding: 0 0 0 1rem;
     font-weight: 500;
     font-size: 1.2rem;
     border-bottom: none;
   }
   &:hover, &:active {
-    color: rgba($white, .7);
+    color: rgba($white, .4);
     font-weight: 500;
     font-size: 1.2rem;
     border-bottom: none;
@@ -349,7 +353,7 @@ a.previous {
   }
 
   &:hover:after {
-    opacity: 0.7;
+    opacity: 0.4;
     left: -0.4rem
   }
 }
@@ -373,20 +377,21 @@ a.previous {
     font-weight: 500;
   }
 }
-
 .text-container {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   h2 {
     text-align: center;
-    margin: 4rem 0 2rem;
+    margin: 4rem 0 1rem;
   }
   p {
-    margin: 0 0 4rem;
+    margin: 0;
+    &.short {
+      text-align: center;
+    }
   }
 }
 
-.image-container {
-
-}
 
 
 @media only screen and (min-width: 44rem) {

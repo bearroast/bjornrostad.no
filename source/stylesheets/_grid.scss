@@ -1,11 +1,19 @@
+$medium: 54rem;
+$medium-padding: $medium - 2rem;
+
+$large: 68rem;
+$large-padding: $large - 2rem;
+
+$x-large: 84rem;
+$x-large-padding: $x-large - 2rem;
+
+
 .container {
   box-sizing: border-box;
   display: flex;
   flex: 0 1 auto;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-right: -1rem;
-  margin-left: -1rem;
   margin: 0 auto;
 }
 
@@ -46,6 +54,7 @@
   box-sizing: border-box;
   padding-right: 1rem;
   padding-left: 1rem;
+  height: 26rem;
 }
 
 .project-delectable {
@@ -92,7 +101,7 @@
 
     .image-02 {
       margin-top: 6rem;
-      margin-left: 16.66666667%;;
+      margin-left: 16.66666667%;
       flex-basis: 33.33333333%;
       max-width: 33.33333333%;
       border-radius: 4px;
@@ -101,10 +110,11 @@
 }
 
 
-@media only screen and (min-width: 44rem) {
+@media only screen and (min-width: $medium) {
   .container {
-    width: 42rem;
+    width: $medium-padding;
   }
+
 
   .intro {
     padding-right: 3rem;
@@ -113,6 +123,7 @@
 
   .project {
     border: 1.2rem solid #fff;
+    height: 28rem;
   }
 
   .project-alchemist {
@@ -142,20 +153,32 @@
   }
 }
 
-@media only screen and (min-width: 62rem) {
+@media only screen and (min-width: $large) {
   .container {
-    width: 58rem;
+    width: $large-padding;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .project {
+    height: 32rem;
   }
 
   .intro {
-    padding-right: 10rem;
-    padding-left: 10rem;
+    margin-left: 8.33333333%;
+    flex-basis: 83.33333333%;
+    max-width: 83.33333333%;
   }
 
 }
 
-@media only screen and (min-width: 75rem) {
+@media only screen and (min-width: $x-large) {
   .container {
-    width: 69rem;
+    width: $x-large-padding;
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+  .project {
+    height: 34em;
   }
 }
