@@ -1,3 +1,6 @@
+$small: 42rem;
+$small-padding: $small - 2rem;
+
 $medium: 54rem;
 $medium-padding: $medium - 2rem;
 
@@ -17,139 +20,16 @@ $x-large-padding: $x-large - 2rem;
   margin: 0 auto;
 }
 
-.masthead {
-  align-items: center;
-  justify-content: center;
-}
 
-.aligner {
-  display: flex;
-  align-items: center;
-  height: 100vh;
-  justify-content: center;
-}
-
-.masthead-text {
-  box-sizing: border-box;
-  flex-basis: 100%;
-  h1 {
-    padding-right: 2rem;
-    padding-left: 2rem;
-  }
-  h3 {
-    padding-right: 18rem;
-    padding-left: 2rem;
+@media only screen and (min-width: $small) {
+  .container {
+    width: $small-padding;
   }
 }
-
-.intro {
-  box-sizing: border-box;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.project {
-  box-sizing: border-box;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  height: 26rem;
-}
-
-.project-delectable {
-  flex-basis: 100%;
-  max-width: 100%;
-}
-
-.project-alchemist {
-  flex-basis: 100%;
-  max-width: 100%;
-}
-
-.project-banquet {
-  flex-basis: 100%;
-  max-width: 100%;
-}
-
-
-.overview-box {
-  flex-basis: 33.33333333%;
-  max-width: 33.33333333%;
-}
-
-.text-container {
-  box-sizing: border-box;
-  flex: 0 0 auto;
-  margin-left: 16.66666667%;
-  flex-basis: 66.66666667%;
-  max-width: 66.66666667%;
-}
-
-.image-container {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: stretch;
-    align-content: stretch;
-    .image-01 {
-      margin-left: 8.33333333%;
-      flex-basis: 33.33333333%;
-      max-width: 33.33333333%;
-      border-radius: 4px;
-      box-shadow: 0px 10px 24px 5px rgba(0,0,0,0.12);
-    }
-
-    .image-02 {
-      margin-top: 6rem;
-      margin-left: 16.66666667%;
-      flex-basis: 33.33333333%;
-      max-width: 33.33333333%;
-      border-radius: 4px;
-      box-shadow: 0px 10px 24px 5px rgba(0,0,0,0.12);
-    }
-}
-
 
 @media only screen and (min-width: $medium) {
   .container {
     width: $medium-padding;
-  }
-
-
-  .intro {
-    padding-right: 3rem;
-    padding-left: 3rem;
-  }
-
-  .project {
-    border: 1.2rem solid #fff;
-    height: 28rem;
-  }
-
-  .project-alchemist {
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-
-  .project-banquet{
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-
-  .project-banquet{
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-
-  .masthead-text {
-    h1 {
-      padding-right: 2rem;
-      padding-left: 0rem;
-    }
-    h3 {
-      padding-right: 20rem;
-      padding-left: 0rem;
-    }
   }
 }
 
@@ -159,17 +39,6 @@ $x-large-padding: $x-large - 2rem;
     padding-right: 2rem;
     padding-left: 2rem;
   }
-
-  .project {
-    height: 32rem;
-  }
-
-  .intro {
-    margin-left: 8.33333333%;
-    flex-basis: 83.33333333%;
-    max-width: 83.33333333%;
-  }
-
 }
 
 @media only screen and (min-width: $x-large) {
@@ -177,8 +46,5 @@ $x-large-padding: $x-large - 2rem;
     width: $x-large-padding;
     padding-right: 3rem;
     padding-left: 3rem;
-  }
-  .project {
-    height: 34em;
   }
 }

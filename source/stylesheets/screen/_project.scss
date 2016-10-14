@@ -1,0 +1,29 @@
+@import "screen/project-masthead";
+
+
+.project-overview {
+  border-bottom: 2px solid $gray-1;
+  padding: 2rem 0;
+  text-align: center;
+  h5 {
+    color: $gray-3;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+
+  }
+  span {
+    color: gray-4;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+
+
+.overview-box {
+  flex-basis: 33.33333333%;
+  max-width: 33.33333333%;
+}

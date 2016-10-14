@@ -191,36 +191,7 @@
   transition-delay: 0.1s;
 }
 
-.toggle-nav {
-  animation-delay: 1s;
-  animation-duration: 1.2s;
-  animation-name: fadeInNav;
-  animation-fill-mode: both;
-  box-sizing: border-box;
-  right: 1.6rem;
-  top: 1rem;
-  position: absolute;
-  z-index: 9999999999999;
-  transition: all 0.2s ease-in-out
-
-}
-
-.toggle-nav.is-active {
-  right: 1.6rem;
-  top: 1rem;
-  position: fixed;
-  z-index: 9999999999999;
-}
-
 @media only screen and (min-width: $medium) {
-  .toggle-nav {
-    right: 3rem;
-    top: 2.2rem;
-  }
-  .toggle-nav.is-active {
-    right: 3rem;
-    top: 2.2rem;
-  }
   #fullscreen-menu {
     ul {
       left: 8rem;
@@ -235,14 +206,6 @@
 }
 
 @media only screen and (min-width: $large) {
-  .toggle-nav {
-    right: 4rem;
-    top: 3.2rem;
-  }
-  .toggle-nav.is-active {
-    right: 4rem;
-    top: 3.2rem;
-  }
   #fullscreen-menu {
     ul {
       top: 8rem;
@@ -252,14 +215,6 @@
 }
 
 @media only screen and (min-width: $x-large) {
-  .toggle-nav {
-    right: 5rem;
-    top: 4.2rem;
-  }
-  .toggle-nav.is-active {
-    right: 5rem;
-    top: 4.2rem;
-  }
   #fullscreen-menu {
     ul {
       top: 8rem;

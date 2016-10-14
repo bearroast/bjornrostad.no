@@ -1,0 +1,65 @@
+a.previous {
+  -webkit-user-select: none;
+  animation-delay: .8s;
+  animation-duration: 1.2s;
+  animation-name: fadeInNav;
+  animation-fill-mode: both;
+  left: 1rem;
+  top: 1.4rem;
+  position: absolute;
+  z-index: 9999999999999;
+  &:link, &:visited {
+    color: rgba($white, .6);
+    padding: 0 0 0 1rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-bottom: none;
+  }
+  &:hover, &:active {
+    color: rgba($white, .4);
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-bottom: none;
+  }
+
+  &:after {
+    background: image-url('prev.svg') no-repeat center;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 13px;
+    height: 100%;
+    top: 0;
+    left: -0.1rem;
+    opacity: 0;
+    transition: all 0.2s ease-in-out
+  }
+
+  &:hover:after {
+    opacity: 0.4;
+    left: -0.4rem
+  }
+}
+
+
+
+@media only screen and (min-width: 44rem) {
+  a.previous {
+    left: 2rem;
+    top: 2.6rem;
+  }
+}
+
+@media only screen and (min-width: 62rem) {
+  a.previous {
+    left: 3rem;
+    top: 3.6rem;
+  }
+}
+
+@media only screen and (min-width: 75rem) {
+  a.previous {
+    left: 4rem;
+    top: 4.6rem;
+  }
+}

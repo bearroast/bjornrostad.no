@@ -1,11 +1,19 @@
 @charset "utf-8";
+
 @import "normalize";
 @import "animate";
 @import "grid";
 @import "color";
-@import "menu-toggle";
-@import "fullscreen-menu";
-@import "scroll-to-top";
+
+@import "ui/button-home";
+@import "ui/button-menu";
+@import "ui/button-to-top";
+
+@import "screen/menu";
+@import "screen/index";
+@import "screen/project";
+@import "screen/about";
+
 
 * {
   -webkit-margin-before: 0;
@@ -16,9 +24,8 @@
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-html {
-  font-size: 18px;
-}
+html { font-size: 18px; }
+
 body {
   font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
   color: $gray-4;
@@ -33,74 +40,73 @@ body {
 ::selection { background: $yellow; }
 
 h1 {
-  font-weight: 600;
   font-size: 4.2rem;
+  font-weight: 600;
   letter-spacing: 2px;
-  margin: 0;
-
 }
 
 h2 {
+  font-size: 2.6rem;
   font-weight: 500;
-  font-size: 1.2rem;
-  letter-spacing: 0px;
-  text-align: left;
-  margin: 0;
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 400;
-  letter-spacing: 0px;
-  line-height: 38px;
-  margin: 0;
-
 }
 
 h4 {
   font-size: 0.9rem;
-  letter-spacing: 1px;
   font-weight: 700;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  margin: 0;
 }
 
 h5 {
   font-size: 1rem;
   font-weight: 600;
-  margin: 0;
 }
 
 h6 {
   font-size: 0.9rem;
-  letter-spacing: 0.88px;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  margin: 0;
 }
 
-p {
-  margin: 10px 0 20px;
+p { margin: 10px 0 20px; }
+
+
+a:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -0.1rem;
+  width: calc(100% + 0.2rem);
+  z-index: -1;
+  height: .5rem;
+  background: $yellow;
+  transition: all 0.2s ease
 }
 
 a:link, a:visited {
+  position: relative;
   color: $gray-4;
-  font-weight: 400;
   text-decoration: none;
-  border-bottom: 2px solid $gray-2;
-  transition-delay: 0s;
-  transition-duration: 0.2s;
-  transition-property: all;
+  transition: all 0.2s ease;
 }
 
 a:hover, a:active {
-  color: $gray-6;
-  text-decoration: none;
-  padding-bottom: 2px;
-  border-bottom: 2px solid $gray-3;
-  transition-delay: 0s;
-  transition-duration: 0.2s;
-  transition-property: all;
+  position: relative;
+  color: $gray-4;
+  transition: all 0.2s ease;
+  &:before {
+    height: 1.24rem;
+    bottom: -2px;
+  }
 }
+
+
+
 
 footer {
   font-size: 1.4rem;
@@ -110,307 +116,5 @@ footer {
   span {
     color: $gray-2;
     padding: 0 1rem;
-  }
-}
-
-.intro {
-  p, a {
-    font-size: 1.4rem;
-
-  }
-
-}
-
-
-.project {
-  position: relative;
-  overflow: hidden;
-
-  h2 {
-    font-size: 2.6rem;
-    line-height: 1.4;
-    color: $white;
-    letter-spacing: 0px;
-    font-weight: 300;
-    padding: 0 3rem;
-  }
-
-  h4 {
-    color: $white;
-    padding: 7rem 3rem 0 3rem;
-  }
-
-  a:link, a:visited {
-    color: $white;
-    border: 2px solid $white;
-    position: absolute;
-    bottom: 4rem;
-    left: 4rem;
-    font-weight: 600;
-  }
-  a:hover, a:active {
-    background: $white;
-    border: 2px solid $white;
-    position: absolute;
-    bottom: 4rem;
-    left: 4rem;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out
-  }
-}
-
-.chevron {
-  padding: 1rem 2rem;
-  overflow: hidden;
-  position: relative;
-}
-#project-banquet {
-  .chevron:after {
-    background: image-url('chevron-banquet.svg') no-repeat center;
-  }
-}
-
-#project-delectable {
-  .chevron:after {
-    background: image-url('chevron-delectable.svg') no-repeat center;
-  }
-
-}
-
-#project-alchemist {
-  .chevron:after {
-    background: image-url('chevron-alchemist.svg') no-repeat center;
-  }
-}
-
-.chevron:after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 13px;
-  height: 100%;
-  top: 0;
-  right: -2rem;
-  transition: all 0.2s ease-in-out
-}
-
-.chevron:hover:after {
-  right: 1rem
-}
-
-.chevron:hover {
-  padding: 1rem 3rem 1rem 2rem;
-}
-
-.masthead {
-  h1 {
-    margin: 1rem 0 2rem;
-    animation-delay: 0.4s;
-    animation-duration: 1.8s;
-    animation-name: fadeInHeader;
-    animation-fill-mode: both;
-    color: $white;
-  }
-
-  h3 {
-    animation-delay: 0.4s;
-    animation-duration: 1.8s;
-    animation-name: fadeInHeader;
-    animation-fill-mode: both;
-    margin: 0 0 6rem;
-    color: rgba($white, .9);
-  }
-  img {
-    animation-duration: 1s;
-    animation-name: fadeInHeader;
-    animation-fill-mode: both;
-    margin: 0;
-  }
-
-  .badge-1 {
-        animation-delay: 1.4s;
-  }
-  .badge-2 {
-        animation-delay: 1.6s;
-  }
-}
-
-
-.project-delectable {
-  background: image-url('project-delectable-cover.jpg') $project-delectable no-repeat center;
-  background-size: cover;
-
-  ::selection {
-    background: $white;
-  }
-  a:hover, a:active {
-    color: $project-delectable;
-  }
-}
-
-.project-alchemist {
-  background: image-url('project-alchemist-cover.jpg') $project-alchemist no-repeat center;
-  background-size: cover;
-
-  ::selection {
-    background: $white;
-  }
-
-  a:hover, a:active {
-    color: $project-alchemist;
-  }
-}
-
-.project-banquet {
-  background: image-url('project-banquet-cover.jpg') $project-banquet no-repeat center;
-  background-size: cover;
-
-  ::selection {
-    background: $white;
-  }
-
-  a:hover, a:active {
-    color: $project-banquet;
-  }
-}
-
-
-.avatar {
-
-  box-sizing: border-box;
-  flex-basis: 100%;
-  margin: 4rem auto;
-  text-align: center;
-  user-select: none;
-  img {
-    width: 8rem;
-    height: 8rem;
-  }
-}
-
-.project-delectable-cover {
-  height: 100%;
-  background: image-url('project-delectable-cover.jpg') $project-delectable no-repeat center;
-  background-size: cover;
-  ::selection {
-    background: $white;
-  }
-}
-
-.project-alchemist-cover {
-  height: 100%;
-  background: image-url('project-alchemist-cover.jpg') $project-alchemist no-repeat center;
-  background-size: cover;
-  ::selection {
-    background: $white;
-  }
-}
-
-.project-banquet-cover {
-  height: 100%;
-  background: image-url('project-banquet-cover.jpg') $project-banquet no-repeat center;
-  background-size: cover;
-  ::selection {
-    background: $white;
-  }
-}
-
-a.previous {
-  -webkit-user-select: none;
-  animation-delay: .8s;
-  animation-duration: 1.2s;
-  animation-name: fadeInNav;
-  animation-fill-mode: both;
-  left: 1rem;
-  top: 1.4rem;
-  position: absolute;
-  z-index: 9999999999999;
-  &:link, &:visited {
-    color: rgba($white, .6);
-    padding: 0 0 0 1rem;
-    font-weight: 500;
-    font-size: 1.2rem;
-    border-bottom: none;
-  }
-  &:hover, &:active {
-    color: rgba($white, .4);
-    font-weight: 500;
-    font-size: 1.2rem;
-    border-bottom: none;
-  }
-
-  &:after {
-    background: image-url('prev.svg') no-repeat center;
-    content: '';
-    display: block;
-    position: absolute;
-    width: 13px;
-    height: 100%;
-    top: 0;
-    left: -0.1rem;
-    opacity: 0;
-    transition: all 0.2s ease-in-out
-  }
-
-  &:hover:after {
-    opacity: 0.4;
-    left: -0.4rem
-  }
-}
-
-.project-overview {
-  border-bottom: 2px solid $gray-1;
-  padding: 2rem 0;
-  text-align: center;
-  h5 {
-    color: $gray-3;
-    font-size: 0.8rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-
-
-  }
-  span {
-    color: gray-4;
-    font-size: 1rem;
-    font-weight: 500;
-  }
-}
-.text-container {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  h2 {
-    text-align: center;
-    margin: 4rem 0 1rem;
-  }
-  p {
-    margin: 0;
-    &.short {
-      text-align: center;
-    }
-  }
-}
-
-
-
-@media only screen and (min-width: 44rem) {
-  a.previous {
-    left: 2rem;
-    top: 2.6rem;
-  }
-}
-
-@media only screen and (min-width: 62rem) {
-  a.previous {
-    left: 3rem;
-    top: 3.6rem;
-  }
-}
-
-@media only screen and (min-width: 75rem) {
-  a.previous {
-    left: 4rem;
-    top: 4.6rem;
   }
 }

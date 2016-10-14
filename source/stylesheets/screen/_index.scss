@@ -1,0 +1,53 @@
+@import "screen/project-list";
+
+.avatar {
+  box-sizing: border-box;
+  flex-basis: 100%;
+  margin: 3rem auto 0;
+  text-align: center;
+  user-select: none;
+  img {
+    width: 8rem;
+    height: 8rem;
+    image-rendering: pixelated;
+
+  }
+}
+
+.intro {
+  // color: $gray-5;
+  box-sizing: border-box;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+@media only screen and (min-width: $small) {
+
+}
+
+@media only screen and (min-width: $medium) {
+  .intro {
+    margin-left: 8.33333333%;
+    flex-basis: 83.33333333%;
+    max-width: 83.33333333%;
+  }
+}
+
+@media only screen and (min-width: $large) {
+
+}
+
+@media only screen and (min-width: $x-large) {
+  .intro {
+    margin-left: 16.66666667%;
+    flex-basis: 66.66666667%;
+    max-width: 66.66666667%;
+  }
+}

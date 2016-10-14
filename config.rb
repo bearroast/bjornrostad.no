@@ -12,6 +12,7 @@ configure :build do
   activate :asset_hash
 end
 
+activate :autoprefixer
 activate :sprockets
 activate :directory_indexes
 activate :relative_assets
