@@ -8,6 +8,7 @@ title: Bjørn Rostad › Banquet Shopping
   <div class="push-wrap">
 
     <%= partial "layouts/navigation" %>
+    <%= partial "layouts/scroll-to-top" %>
 
     <section class="masthead project-banquet-cover">
       <div class="container">
@@ -21,14 +22,28 @@ title: Bjørn Rostad › Banquet Shopping
     </section>
 
     <main>
-      <div class="container">
-        <p>Content</p>
-      </div>
+      <section class="project-overview">
+        <div class="container">
+          <div class="overview-box">
+            <h5>Timeline</h5>
+            <span>2015-2016</span>
+          </div>
+          <div class="overview-box">
+            <h5>Role</h5>
+            <span>Product Designer</span>
+          </div>
+          <div class="overview-box">
+            <h5>Platform</h5>
+            <span>iPhone, iPad and Web</span>
+          </div>
+        </div>
+      </section>
     </main>
   </div>
 </div>
 
 <script>
+
   var hamburger = document.getElementById('fullscreen-menu-toggle');
   hamburger.addEventListener('click', function (e) {
       hamburger.classList.toggle('is-active');

@@ -65,11 +65,40 @@
 
 
 .overview-box {
-  flex-basis: 33%;
-  max-width: 33%;
+  flex-basis: 33.33333333%;
+  max-width: 33.33333333%;
 }
 
+.text-container {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  margin-left: 16.66666667%;
+  flex-basis: 66.66666667%;
+  max-width: 66.66666667%;
+}
 
+.image-container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: stretch;
+    align-content: stretch;
+    .image-01 {
+      margin-left: 8.33333333%;
+      flex-basis: 33.33333333%;
+      max-width: 33.33333333%;
+      border-radius: 4px;
+      box-shadow: 0px 10px 24px 5px rgba(0,0,0,0.12);
+    }
+
+    .image-02 {
+      margin-top: 6rem;
+      margin-left: 16.66666667%;;
+      flex-basis: 33.33333333%;
+      max-width: 33.33333333%;
+      border-radius: 4px;
+      box-shadow: 0px 10px 24px 5px rgba(0,0,0,0.12);
+    }
+}
 
 
 @media only screen and (min-width: 44rem) {
@@ -87,6 +116,11 @@
   }
 
   .project-alchemist {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .project-banquet{
     flex-basis: 100%;
     max-width: 100%;
   }

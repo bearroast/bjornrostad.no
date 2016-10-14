@@ -5,6 +5,7 @@
 @import "color";
 @import "menu-toggle";
 @import "fullscreen-menu";
+@import "scroll-to-top";
 
 * {
   -webkit-margin-before: 0;
@@ -164,19 +165,20 @@ footer {
   overflow: hidden;
   position: relative;
 }
-.project-banquet {
+#project-banquet {
   .chevron:after {
     background: image-url('chevron-banquet.svg') no-repeat center;
   }
 }
 
-.project-delectable {
+#project-delectable {
   .chevron:after {
     background: image-url('chevron-delectable.svg') no-repeat center;
   }
+
 }
 
-.project-alchemist {
+#project-alchemist {
   .chevron:after {
     background: image-url('chevron-alchemist.svg') no-repeat center;
   }
@@ -352,19 +354,41 @@ a.previous {
   }
 }
 
-
 .project-overview {
   border-bottom: 2px solid $gray-1;
   padding: 2rem 0;
   text-align: center;
   h5 {
-    font-size: 0.9rem;
     color: $gray-3;
-    letter-spacing: 1px;
+    font-size: 0.8rem;
+    font-weight: 500;
     text-transform: uppercase;
+    letter-spacing: 1px;
+
+
+  }
+  span {
+    color: gray-4;
+    font-size: 1rem;
     font-weight: 500;
   }
 }
+
+.text-container {
+  h2 {
+    text-align: center;
+    margin: 4rem 0 2rem;
+  }
+  p {
+    margin: 0 0 4rem;
+  }
+}
+
+.image-container {
+
+}
+
+
 @media only screen and (min-width: 44rem) {
   a.previous {
     left: 2rem;

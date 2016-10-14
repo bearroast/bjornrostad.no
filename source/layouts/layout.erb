@@ -36,5 +36,17 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
   </script>
+  
+  <script>
+    var hamburger = document.getElementById('fullscreen-menu-toggle');
+    hamburger.addEventListener('click', function (e) {
+        hamburger.classList.toggle('is-active');
+        e.preventDefault();
+    });
 
+    $("a[href='#scroll-to-top']").click(function() {
+      $("html, body").animate({ scrollTop: 0 }, "slow");
+      return false;
+    });
+  </script>
 </html>

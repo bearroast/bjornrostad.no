@@ -7,6 +7,7 @@ title: Bjørn Rostad › Delectable Wine
   <div class="push-wrap">
 
     <%= partial "layouts/navigation" %>
+    <%= partial "layouts/scroll-to-top" %>
 
     <section class="masthead project-delectable-cover">
       <div class="container">
@@ -17,14 +18,12 @@ title: Bjørn Rostad › Delectable Wine
             <%= image_tag 'app-store-best-new-app.svg', :class => 'badge-1' %>
             <%= image_tag 'play-store-editors-choice.svg', :class => 'badge-2' %>
           </div>
-          <%= link_to '', '#scroll' %>
-          <a href="#scroll"></a>
         </div>
       </div>
     </section>
 
     <main>
-      <div class="project-overview">
+      <section class="project-overview">
         <div class="container">
           <div class="overview-box">
             <h5>Timeline</h5>
@@ -39,18 +38,41 @@ title: Bjørn Rostad › Delectable Wine
             <span>iPhone and Android</span>
           </div>
         </div>
-      </div>
-      <div class="container">
-        <p>Content</p>
-      </div>
+      </section>
+      <section class="layout-1">
+        <div class="container">
+          <div class="text-container">
+            <h2>Text</h2>
+            <p>Wine is complex, and buying wine is even more difficult. So we democratized the industry by letting both wine enthusiasts and experts write and share their tasting notes, and consolidating their reviews in one place. It was a lot of fun to design a product that is useful to both casual wine drinkers and industry experts, who work with wine fulltime as wine makers, journalists and sommeliers at the world‘s top restaurants.</p>
+          </div>
+          <div class="image-container">
+            <%= image_tag 'delectable/camera_01.jpg', :class => "image-01" %>
+            <%= image_tag 'delectable/camera_01.jpg', :class => "image-02" %>
+          </div>
+        </div>
+      </section>
+
+      <section class="layout-2">
+        <div class="container">
+          <div class="text-container">
+            <h2>Text</h2>
+            <p>Wine is complex, and buying wine is even more difficult. So we democratized the industry by letting both wine enthusiasts and experts write and share their tasting notes, and consolidating their reviews in one place. It was a lot of fun to design a product that is useful to both casual wine drinkers and industry experts, who work with wine fulltime as wine makers, journalists and sommeliers at the world‘s top restaurants.</p>
+          </div>
+          <div class="image-container">
+
+          </div>
+        </div>
+      </section>
+
+      <section class="layout-3">
+        <div class="container">
+          <div class="text-container">
+            <h2>Text</h2>
+            <p>Wine is complex, and buying wine is even more difficult. So we democratized the industry by letting both wine enthusiasts and experts write and share their tasting notes, and consolidating their reviews in one place. It was a lot of fun to design a product that is useful to both casual wine drinkers and industry experts, who work with wine fulltime as wine makers, journalists and sommeliers at the world‘s top restaurants.</p>
+          </div>
+        </div>
+      </section>
+
     </main>
   </div>
 </div>
-
-<script>
-  var hamburger = document.getElementById('fullscreen-menu-toggle');
-  hamburger.addEventListener('click', function (e) {
-      hamburger.classList.toggle('is-active');
-      e.preventDefault();
-  });
-</script>

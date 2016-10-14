@@ -1,0 +1,22 @@
+a#scroll-to-top {
+  &:link, &:visited {
+    opacity: .8;
+    background: transparent image-url('scroll-to-top.svg');
+    display: inline-block;
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    height: 32px;
+    width: 32px;
+    border-bottom: 0;
+    transition-duration: all 0.2s ease-in-out;
+  }
+
+  &:hover, &:active {
+    opacity: .4;
+    padding-bottom: 0;
+    border-bottom: 0;
+    bottom: 4.4rem;
+    transition-duration: all 0.2s ease-in-out;
+  }
+}
