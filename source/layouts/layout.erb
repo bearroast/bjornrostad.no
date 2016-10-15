@@ -14,7 +14,7 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <%= partial "layouts/fullscreen-menu" %>
+    <%= partial "layouts/nav" %>
       <div class="site-wrap">
         <div class="push-wrap">
         <%= yield %>
@@ -26,9 +26,9 @@
   <%= partial "layouts/analytics" %>
 
   <script>
-    var menu = document.getElementById('fullscreen-menu-toggle');
-    menu.addEventListener('click', function (e) {
-        menu.classList.toggle('is-active');
+    var nav = document.getElementById('nav-toggle');
+    nav.addEventListener('click', function (e) {
+        nav.classList.toggle('is-active');
         e.preventDefault();
     });
 

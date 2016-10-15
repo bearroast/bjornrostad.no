@@ -2,24 +2,10 @@
 title: Bjørn Rostad › About
 ---
 
-<%= partial "layouts/fullscreen-menu" %>
+<%= partial "layouts/header" %>
+<%= partial "layouts/scroll-to-top" %>
 
-<div class="site-wrap">
-  <div class="push-wrap">
-    <%= partial "layouts/navigation" %>
 
-    <main>
-      <div class="container">
-        <p>Hello! My name is Bjørn Rostad and I'm a Norwegian designer living and working in San Francisco. I focus on designing and crafting apps, websites and design systems that are delightful, elegant and easy to use.</p>
-      </div>
-    </main>
-  </div>
+<div class="container">
+  <p>Hello! My name is Bjørn Rostad and I'm a Norwegian designer living and working in San Francisco. I focus on designing and crafting apps, websites and design systems that are delightful, elegant and easy to use.</p>
 </div>
-
-<script>
-  var hamburger = document.getElementById('fullscreen-menu-toggle');
-  hamburger.addEventListener('click', function (e) {
-      hamburger.classList.toggle('is-active');
-      e.preventDefault();
-  });
-</script>

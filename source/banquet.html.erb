@@ -2,51 +2,33 @@
 title: Bjørn Rostad › Banquet Shopping
 ---
 
-<%= partial "layouts/fullscreen-menu" %>
+<%= partial "layouts/header" %>
+<%= partial "layouts/scroll-to-top" %>
 
-<div class="site-wrap">
-  <div class="push-wrap">
-
-    <%= partial "layouts/navigation" %>
-    <%= partial "layouts/scroll-to-top" %>
-
-    <section class="masthead project-banquet-cover">
-      <div class="container">
-        <div class="aligner">
-          <div class="masthead-text">
-            <h1>Banquet Shopping</h1>
-            <h3>Decription</h3>
-          </div>
-        </div>
+<section class="masthead project-banquet-cover">
+  <div class="container">
+    <div class="aligner">
+      <div class="masthead-text">
+        <h1>Banquet Shopping</h1>
+        <h3>Decription</h3>
       </div>
-    </section>
-
-    <main>
-      <section class="project-overview">
-        <div class="container">
-          <div class="overview-box">
-            <h5>Timeline</h5>
-            <span>2015-2016</span>
-          </div>
-          <div class="overview-box">
-            <h5>Role</h5>
-            <span>Product Designer</span>
-          </div>
-          <div class="overview-box">
-            <h5>Platform</h5>
-            <span>iPhone, iPad and Web</span>
-          </div>
-        </div>
-      </section>
-    </main>
+    </div>
   </div>
-</div>
+</section>
 
-<script>
-
-  var hamburger = document.getElementById('fullscreen-menu-toggle');
-  hamburger.addEventListener('click', function (e) {
-      hamburger.classList.toggle('is-active');
-      e.preventDefault();
-  });
-</script>
+<section class="project-overview">
+  <div class="container">
+    <div class="overview-box">
+      <h5>Timeline</h5>
+      <span>2015-2016</span>
+    </div>
+    <div class="overview-box">
+      <h5>Role</h5>
+      <span>Product Designer</span>
+    </div>
+    <div class="overview-box">
+      <h5>Platform</h5>
+      <span>iPhone, iPad and Web</span>
+    </div>
+  </div>
+</section>
