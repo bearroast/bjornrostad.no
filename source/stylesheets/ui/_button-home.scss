@@ -9,16 +9,16 @@ a.home {
   position: absolute;
   z-index: 9999999999999;
   &:link, &:visited {
-    color: rgba($white, .6);
-    padding: 0 0 0 1rem;
-    font-weight: 500;
-    font-size: 1.2rem;
+    color: $white;
+    padding: 0.4rem 0 0 1rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     border-bottom: none;
   }
   &:hover, &:active {
-    color: rgba($white, .4);
-    font-weight: 500;
-    font-size: 1.2rem;
+    color: rgba($white, .7);
     border-bottom: none;
   }
 
@@ -29,14 +29,14 @@ a.home {
     position: absolute;
     width: 13px;
     height: 100%;
-    top: 0;
+    top: 3px;
     left: -0.1rem;
     opacity: 0;
     transition: all 0.2s ease-in-out
   }
 
   &:hover:after {
-    opacity: 0.4;
+    opacity: 0.7;
     left: -0.4rem
   }
 }
