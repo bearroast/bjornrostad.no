@@ -9,37 +9,26 @@
     <meta content="Bjørn Rostad" name="author">
 
     <%= favicon_tag 'favicon.ico' %>
-    <%= stylesheet_link_tag :site %>
+    <%= stylesheet_link_tag 'site' %>
     <%= javascript_include_tag 'all'  %>
-
   </head>
 
   <body class="<%= page_classes %>">
-    <div id="main">
-      <%= yield %>
-
-      <footer>
-        <p><%= link_to 'hi@bjornrostad.no', 'mailto:hi@bjornrostad.no' %> <span>/</span> <%= link_to 'iMessage', 'imessage:hi@bjornrostad.no' %> <span>/</span> <%= link_to 'Twitter', 'http://twitter.com/bearroast' %></p>
-      </footer>
-
+    <%= partial "layouts/fullscreen-menu" %>
+      <div class="site-wrap">
+        <div class="push-wrap">
+        <%= yield %>
+        <%= partial "layouts/footer" %>
+      </div>
     </div>
   </body>
 
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-22572557-1']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
+  <%= partial "layouts/analytics" %>
 
   <script>
-    var hamburger = document.getElementById('fullscreen-menu-toggle');
-    hamburger.addEventListener('click', function (e) {
-        hamburger.classList.toggle('is-active');
+    var menu = document.getElementById('fullscreen-menu-toggle');
+    menu.addEventListener('click', function (e) {
+        menu.classList.toggle('is-active');
         e.preventDefault();
     });
 

@@ -1,51 +1,97 @@
 @import "screen/project-list";
 
-.avatar {
-  box-sizing: border-box;
-  flex-basis: 100%;
-  margin: 3rem auto 0;
-  text-align: center;
-  user-select: none;
-  img {
-    width: 8rem;
-    height: 8rem;
-    image-rendering: pixelated;
+.index {
+  .home {
+    z-index: -1;
+    &:link, &:visited {
+      color: $gray-4;
+      padding: 0.4rem 0 0 1rem;
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-bottom: none;
+    }
+    &:hover, &:active {
+      color: rgba($gray-4, .4);
+      font-weight: 500;
+      font-size: 1.2rem;
+      border-bottom: none;
+    }
+  }
 
+  #fullscreen-menu-toggle {
+    &:hover {
+      span, span:after, span:before {
+        background-color: $gray-4;
+      }
+    }
+    span, span:after, span:before {
+    	background-color: $gray-4;
+    }
+    &.is-active span {
+    	background-color: transparent;
+    }
+    &.is-active span:before {
+      background-color: $gray-5;
+    }
+
+    &.is-active span:after {
+      background-color: $gray-5;
+    }
+    &.is-active {
+      &:hover {
+        span:after, span:before {
+          background-color: gray-5;
+        }
+      }
+    }
   }
 }
 
 .intro {
-  // color: $gray-5;
+  position: relative;
   box-sizing: border-box;
   padding-right: 2rem;
   padding-left: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  margin-left: 0;
-  font-size: 1.6rem;
-  font-weight: 500;
+  margin-top: 7rem;
+  margin-bottom: 5rem;
   flex-basis: 100%;
   max-width: 100%;
+  font-size: 1.1rem;
 }
 
 @media only screen and (min-width: $small) {
-
-}
-
-@media only screen and (min-width: $medium) {
   .intro {
     margin-left: 8.33333333%;
     flex-basis: 83.33333333%;
     max-width: 83.33333333%;
+    font-size: 1.4rem;
+    margin-top: 9rem;
+    margin-bottom: 7rem;
+  }
+}
+
+@media only screen and (min-width: $medium) {
+  .intro {
+    font-size: 1.6rem;
+    margin-top: 12rem;
   }
 }
 
 @media only screen and (min-width: $large) {
-
+  .intro {
+    font-size: 1.8rem;
+    margin-top: 14rem;
+    margin-left: 16.66666667%;
+    flex-basis: 66.66666667%;
+    max-width: 66.66666667%;
+  }
 }
 
 @media only screen and (min-width: $x-large) {
   .intro {
+    font-size: 2rem;
     margin-left: 16.66666667%;
     flex-basis: 66.66666667%;
     max-width: 66.66666667%;

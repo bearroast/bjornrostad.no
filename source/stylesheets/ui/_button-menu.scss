@@ -1,5 +1,5 @@
 #fullscreen-menu-toggle {
-  -webkit-user-select: none;
+  user-select: none;
 	cursor: pointer;
   width: 2.2rem;
   height: 3rem;
@@ -11,7 +11,7 @@
     span, span:after, span:before {
       background-color: rgba($white, 0.7);
     }
-    transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s ease;
   }
 
   span:after, span:before {
@@ -34,7 +34,7 @@
   	width: 100%;
   	height: 2px;
   	background-color: $white;
-  	transition: all 0.3s;
+  	transition: all 0.3s ease;
   }
 
   &.is-active span {
@@ -55,7 +55,7 @@
       span:after, span:before {
         background-color: rgba($gray-5, 0.7);
       }
-      transition: opacity 0.2s ease-in;
+      transition: opacity 0.2s ease;
     }
   }
 }
@@ -66,24 +66,22 @@
   animation-name: fadeInNav;
   animation-fill-mode: both;
   box-sizing: border-box;
-  right: 1.6rem;
+  right: 2rem;
   top: 1rem;
   position: absolute;
   z-index: 9999999999999;
-  transition: all 0.2s ease-in-out
-
+  transition: all 0.2s ease;
 }
 
 .toggle-nav.is-active {
-  right: 1.6rem;
+  right: 2rem;
   top: 1rem;
   position: fixed;
   z-index: 9999999999999;
 }
 
 
-
-@media only screen and (min-width: $medium) {
+@media only screen and (min-width: $small) {
   .toggle-nav {
     right: 3rem;
     top: 2.2rem;
@@ -94,14 +92,25 @@
   }
 }
 
+@media only screen and (min-width: $medium) {
+  .toggle-nav {
+    right: 3rem;
+    top: 4rem;
+  }
+  .toggle-nav.is-active {
+    right: 3rem;
+    top: 4rem;
+  }
+}
+
 @media only screen and (min-width: $large) {
   .toggle-nav {
     right: 4rem;
-    top: 3.2rem;
+    top: 4rem;
   }
   .toggle-nav.is-active {
     right: 4rem;
-    top: 3.2rem;
+    top: 4rem;
   }
 }
 

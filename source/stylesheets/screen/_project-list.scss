@@ -1,60 +1,92 @@
-.project {
-  box-sizing: border-box;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  height: 26rem;
-}
-
 .project-delectable {
-  flex-basis: 100%;
-  max-width: 100%;
+  background: image-url('project-delectable-cover.jpg') $project-delectable no-repeat center;
+  background-size: cover;
+  ::selection {
+    background: $project-delectable;
+  }
+  a:link, a:visited {
+    color: $white;
+  }
+  a:hover, a:active {
+    color: $project-delectable;
+  }
+  .chevron:after {
+    background: image-url('chevron-delectable.svg') no-repeat center;
+  }
+
 }
 
 .project-alchemist {
-  flex-basis: 100%;
-  max-width: 100%;
+  background: image-url('project-alchemist-cover.jpg') $project-alchemist no-repeat center;
+  background-size: cover;
+  ::selection {
+    background: $project-alchemist;
+  }
+  a:link, a:visited {
+    color: $white;
+  }
+  a:hover, a:active {
+    color: $project-alchemist;
+  }
+  .chevron:after {
+    background: image-url('chevron-alchemist.svg') no-repeat center;
+  }
 }
 
 .project-banquet {
-  flex-basis: 100%;
-  max-width: 100%;
-}
-
-
-.project {
-  position: relative;
-  overflow: hidden;
-
-  h2 {
-    font-size: 2.6rem;
-    line-height: 1.4;
-    color: $white;
-    letter-spacing: 0px;
-    font-weight: 300;
-    padding: 0 3rem;
-  }
-
-  h4 {
-    color: $white;
-    padding: 7rem 3rem 0 3rem;
+  background: image-url('project-banquet-cover.jpg') $project-banquet no-repeat center;
+  background-size: cover;
+  ::selection {
+    background: $project-banquet;
   }
 
   a:link, a:visited {
     color: $white;
+  }
+  a:hover, a:active {
+    color: $project-banquet;
+  }
+
+  .chevron:after {
+    background: image-url('chevron-banquet.svg') no-repeat center;
+  }
+}
+
+.project {
+  flex-basis: 100%;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 20rem;
+
+  h2 {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    color: $white;
+    letter-spacing: 0px;
+    font-weight: 300;
+    padding: 0.5rem 2rem;
+  }
+
+  h4 {
+    color: $white;
+    padding: 4rem 2rem 0 2rem;
+  }
+
+  a:link, a:visited {
     border: 2px solid $white;
     position: absolute;
-    bottom: 4rem;
-    left: 4rem;
+    bottom: 3rem;
+    left: 2rem;
     font-weight: 600;
   }
   a:hover, a:active {
     background: $white;
     border: 2px solid $white;
-    position: absolute;
-    bottom: 4rem;
-    left: 4rem;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out
+    bottom: 3rem;
+    left: 2rem;
+    transition: all 0.2s ease;
   }
 }
 
@@ -62,141 +94,73 @@
   padding: 1rem 2rem;
   overflow: hidden;
   position: relative;
-}
-#project-banquet {
-  .chevron:after {
-    background: image-url('chevron-banquet.svg') no-repeat center;
+  &:hover {
+    padding: 1rem 3rem 1rem 2rem;
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 13px;
+    height: 100%;
+    top: 0;
+    right: -2rem;
+    transition: all 0.2s ease-in-out
+  }
+  &:hover:after {
+    right: 1rem
   }
 }
-
-#project-delectable {
-  .chevron:after {
-    background: image-url('chevron-delectable.svg') no-repeat center;
-  }
-
-}
-
-#project-alchemist {
-  .chevron:after {
-    background: image-url('chevron-alchemist.svg') no-repeat center;
-  }
-}
-
-.chevron:after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 13px;
-  height: 100%;
-  top: 0;
-  right: -2rem;
-  transition: all 0.2s ease-in-out
-}
-
-.chevron:hover:after {
-  right: 1rem
-}
-
-.chevron:hover {
-  padding: 1rem 3rem 1rem 2rem;
-}
-
-
-
-
-
-.project-delectable {
-  background: image-url('project-delectable-cover.jpg') $project-delectable no-repeat center;
-  background-size: cover;
-
-  ::selection {
-    background: $white;
-  }
-  a:hover, a:active {
-    color: $project-delectable;
-  }
-}
-
-.project-alchemist {
-  background: image-url('project-alchemist-cover.jpg') $project-alchemist no-repeat center;
-  background-size: cover;
-
-  ::selection {
-    background: $white;
-  }
-
-  a:hover, a:active {
-    color: $project-alchemist;
-  }
-}
-
-.project-banquet {
-  background: image-url('project-banquet-cover.jpg') $project-banquet no-repeat center;
-  background-size: cover;
-
-  ::selection {
-    background: $white;
-  }
-
-  a:hover, a:active {
-    color: $project-banquet;
-  }
-}
-
 
 
 
 @media only screen and (min-width: $small) {
-
   .project {
-    border-top: 1rem solid #fff;
-    border-bottom: 1rem solid #fff;
-    height: 28rem;
+    border-bottom: 2rem solid $white;
   }
 }
 
 @media only screen and (min-width: $medium) {
-
-
   .project {
-    border-top: 1rem solid #fff;
-    border-bottom: 1rem solid #fff;
-    height: 28rem;
+    height: 24rem;
+    h2 {
+      font-size: 2.8rem;
+    }
   }
-
-  .project-alchemist {
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-
-  .project-banquet{
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-
-  .project-banquet{
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-
-
 }
 
 @media only screen and (min-width: $large) {
-
   .project {
-    border-top: 1rem solid #fff;
-    border-bottom: 1rem solid #fff;
-    height: 32rem;
+    height: 28rem;
+      h2 {
+        padding: 0.5rem 4rem;
+        font-size: 3.4rem;
+      }
+      h4 {
+        padding: 6rem 4rem 0 4rem;
+      }
+
+      a:link, a:visited {
+        bottom: 4rem;
+        left: 4rem;
+      }
+      a:hover, a:active {
+        bottom: 4rem;
+        left: 4rem;
+      }
   }
-
-
 }
 
 @media only screen and (min-width: $x-large) {
   .project {
-    border-top: 1rem solid #fff;
-    border-bottom: 1rem solid #fff;
-    height: 34em;
+    height: 32rem;
+    h2 {
+      padding: 0.5rem 4rem;
+      font-size: 4rem;
+    }
+    a {
+      font-size: 1.2rem;
+    }
+
   }
 }

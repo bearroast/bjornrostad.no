@@ -17,12 +17,12 @@
   z-index: -1;
   height: 100%;
   width: 100%;
+
   ul {
     position: absolute;
     left: 2rem;
-    top: 4rem;
+    top: 3rem;
     width: 100%;
-    // Fix text blur during animation:
     backface-visibility: hidden;
     transform: translateZ(0);
     :nth-child(5) {
@@ -69,12 +69,12 @@
   }
 
   .active {
-    border-bottom: 1px solid $gray-3 !important;
+    border-bottom: 1px solid $gray-2 !important;
   }
 
   h6 {
     color: $gray-3;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 1rem;
   }
 
