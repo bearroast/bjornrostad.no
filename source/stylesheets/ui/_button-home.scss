@@ -1,6 +1,6 @@
 a.home {
-  -webkit-user-select: none;
-  animation-delay: .8s;
+  user-select: none;
+  animation-delay: .4s;
   animation-duration: 1.2s;
   animation-name: fadeInNav;
   animation-fill-mode: both;
@@ -40,7 +40,6 @@ a.home {
     left: -0.4rem
   }
 }
-
 
 
 @media only screen and (min-width: $small) {

@@ -3,9 +3,9 @@ a#scroll-to-top {
     opacity: .8;
     background: transparent image-url('scroll-to-top.svg');
     display: inline-block;
-    position: fixed;
-    bottom: 4rem;
-    right: 4rem;
+    position: absolute;
+    bottom: 4.5rem;
+    right: 5rem;
     height: 32px;
     width: 32px;
     border-bottom: 0;

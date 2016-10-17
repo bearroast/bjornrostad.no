@@ -45,6 +45,10 @@
 }
 
 .intro p {
+  animation-delay: 0.2s;
+  animation-duration: 1.8s;
+  animation-name: fadeInHeader;
+  animation-fill-mode: both;
   margin-left: 8.33333333%;
   flex-basis: 83.33333333%;
   max-width: 83.33333333%;

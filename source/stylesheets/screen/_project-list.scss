@@ -59,6 +59,7 @@
   overflow: hidden;
   box-sizing: border-box;
 
+
   .content {
     position: relative;
     margin-left: 8.33333333%;
@@ -130,26 +131,29 @@
     h2 {
       font-size: 2.2rem;
     }
+
+    h4 {
+      margin: 6rem 0 0;
+    }
     .content {
       height: 22rem;
+    }
+    .link-container {
+      bottom: 4rem;
     }
   }
 }
 
 @media only screen and (min-width: $medium) {
   .project {
-    h4 {
-      margin: 6rem 0 0;
-    }
+
     h2 {
       font-size: 2.8rem;
     }
     .content {
       height: 24rem;
     }
-    .link-container {
-      bottom: 4rem;
-    }
+
   }
 }
 
@@ -164,6 +168,9 @@
       flex-basis: 66.66666667%;
       max-width: 66.66666667%;
     }
+    .link-container {
+      bottom: 6rem;
+    }
   }
 }
 
@@ -172,8 +179,16 @@
     h2 {
       font-size: 4rem;
     }
-    a {
-      font-size: 1.2rem;
+    h4 {
+      margin: 8rem 0 0;
+    }
+    .content {
+      height: 32rem;
+    }
+
+    .link-container {
+      bottom: 8rem;
     }
   }
+
 }

@@ -21,18 +21,3 @@
     transform: none;
   }
 }
-
-@keyframes animateBackground {
-  0% {
-    background-position: center;
-  }
-
-  50% {
-    background-position: 0% 40%;
-  }
-
-  100% {
-    background-position: center;
-  }
-
-}

@@ -61,7 +61,7 @@
 }
 
 .toggle-nav {
-  animation-delay: 1s;
+  animation-delay: .4s;
   animation-duration: 1.2s;
   animation-name: fadeInNav;
   animation-fill-mode: both;
@@ -72,6 +72,13 @@
   z-index: 9999999999999;
   transition: all 0.2s ease;
 }
+
+.delectable_index, .alchemist_index, .banquet_index {
+  .toggle-nav {
+    position: fixed;
+  }
+}
+
 
 .toggle-nav.is-active {
   right: 2rem;

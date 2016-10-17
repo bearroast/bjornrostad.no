@@ -20,19 +20,6 @@ $x-large-padding: $x-large - 2rem;
   margin: 0 auto;
 }
 
-.container-fluid {
-  padding-left: 3rem;
-  padding-right: 3rem;
-  box-sizing: border-box;
-  display: flex;
-  flex: 0 1 auto;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 0 auto;
-
-}
-
-
 @media only screen and (min-width: $small) {
   .container {
     width: $small-padding;
