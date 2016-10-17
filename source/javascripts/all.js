@@ -1,4 +1,6 @@
 //= require vendor/jquery
+//= require vendor/flickity.pkgd.min
+//= require vendor/modernizr-custom.min
 
 // Initiate fullscreen nav
 $(function() {

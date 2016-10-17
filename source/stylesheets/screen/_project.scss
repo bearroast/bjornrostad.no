@@ -1,7 +1,15 @@
 @import "screen/project-masthead";
 
+.index {
+  background-color: #f8f9fa;
+}
+.delectable_index {
+  background-color: darken($project-delectable, 3%);
+  .project-overview {
+    border-bottom: 1px solid darken($project-delectable, 6%);
+  }
+}
 .project-overview {
-  border-bottom: 2px solid $gray-1;
   padding: 2rem 0;
   text-align: center;
   h5 {
@@ -12,7 +20,7 @@
     letter-spacing: 1px;
   }
   span {
-    color: gray-4;
+    color: $gray-2;
     font-size: 1rem;
     font-weight: 500;
   }
@@ -21,4 +29,28 @@
 .overview-box {
   flex-basis: 33.33333333%;
   max-width: 33.33333333%;
+}
+
+.project-content {
+  p {
+    margin-top: 4rem;
+    margin-left: 16.66666667%;
+    flex-basis: 66.66666667%;
+    max-width: 66.66666667%;
+    color: $gray-2;
+  }
+
+  h2 {
+    margin-top: 4rem;
+    margin-left: 16.66666667%;
+    flex-basis: 66.66666667%;
+    max-width: 66.66666667%;
+    color: $gray-3;
+    text-align: center;
+  }
+
+  img {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
 }

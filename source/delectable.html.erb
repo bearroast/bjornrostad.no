@@ -35,12 +35,35 @@ title: Bjørn Rostad › Delectable Wine
   </div>
 </section>
 
-<section class="layout-1">
+<section class="project-content">
   <div class="container">
-      <p>Wine is complex, and buying wine is even more difficult. So we democratized the industry by letting both wine enthusiasts and experts write and share their tasting notes, and consolidating their reviews in one place. It was a lot of fun to design a product that is useful to both casual wine drinkers and industry experts, who work with wine fulltime as wine makers, journalists and sommeliers at the world‘s top restaurants.</p>
+    <p>Wine is complex, and buying wine is even more difficult. So we democratized the industry by letting both wine enthusiasts and experts write and share their tasting notes, and consolidating their reviews in one place. It was a lot of fun to design a product that is useful to both casual wine drinkers and industry experts, who work with wine fulltime as wine makers, journalists and sommeliers at the world‘s top restaurants.</p>
+    <h2>Title</h2>
+    <p>Wine is complex, and buying wine is even more difficult. So we democratized the industry by letting both wine enthusiasts and experts write and share their tasting notes, and consolidating their reviews in one place.</p>
+  </div>
+</div>
 
-      <h2>Title</h2>
-      <p class="short">Wine is complex, and buying wine is even more difficult. So we democratized the industry by letting both wine enthusiasts and experts write and share their tasting notes, and consolidating their reviews in one place.</p>
-
+<section class="project-content">
+  <div class="container-fluid">
+    <div class="main-carousel carousel">
+      <div class="carousel-cell">
+        <img src="http://placehold.it/350x550/ffffff/23303B" width="350" height="550" />
+      </div>
+      <div class="carousel-cell">
+        <img src="http://placehold.it/350x550/ffffff/f08c00" width="350" height="550" />
+      </div>
+      <div class="carousel-cell">
+        <img src="http://placehold.it/350x550/ffffff/fff3bf" width="350" height="550" />
+      </div>
     </div>
+  </div>
 </section>
+
+<script>
+var options = { prevNextButtons: false, contain: true, dragThreshold: 10, selectedAttraction: 0.1, friction: 0.9 };
+if (matchMedia('screen and (min-width: 48rem)').matches) {
+    options.draggable = false;
+}
+$('.main-carousel').flickity(options);
+
+</script>
