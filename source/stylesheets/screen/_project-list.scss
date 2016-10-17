@@ -58,7 +58,14 @@
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
-  height: 20rem;
+
+  .content {
+    position: relative;
+    margin-left: 8.33333333%;
+    flex-basis: 83.33333333%;
+    max-width: 83.33333333%;
+    height: 20rem;
+  }
 
   h2 {
     font-size: 1.8rem;
@@ -66,29 +73,33 @@
     color: $white;
     letter-spacing: 0px;
     font-weight: 300;
-    padding: 0.5rem 2rem;
   }
 
   h4 {
+    margin: 4rem 0 0;
     color: $white;
-    padding: 4rem 2rem 0 2rem;
+  }
+
+  .link-container {
+    position: absolute;
+    bottom: 3rem;
+    left: 0;
   }
 
   a:link, a:visited {
+    display: block;
     border: 2px solid $white;
-    position: absolute;
-    bottom: 3rem;
-    left: 2rem;
     font-weight: 600;
   }
+
   a:hover, a:active {
     background: $white;
     border: 2px solid $white;
-    bottom: 3rem;
-    left: 2rem;
     transition: all 0.2s ease;
   }
 }
+
+
 
 .chevron {
   padding: 1rem 2rem;
@@ -116,51 +127,53 @@
 
 @media only screen and (min-width: $small) {
   .project {
-    border-bottom: 2rem solid $soft-white;
+    h2 {
+      font-size: 2.2rem;
+    }
+    .content {
+      height: 22rem;
+    }
   }
 }
 
 @media only screen and (min-width: $medium) {
   .project {
-    height: 24rem;
+    h4 {
+      margin: 6rem 0 0;
+    }
     h2 {
       font-size: 2.8rem;
+    }
+    .content {
+      height: 24rem;
+    }
+    .link-container {
+      bottom: 4rem;
     }
   }
 }
 
 @media only screen and (min-width: $large) {
   .project {
-    height: 28rem;
-      h2 {
-        padding: 0.5rem 4rem;
-        font-size: 3.4rem;
-      }
-      h4 {
-        padding: 6rem 4rem 0 4rem;
-      }
-
-      a:link, a:visited {
-        bottom: 4rem;
-        left: 4rem;
-      }
-      a:hover, a:active {
-        bottom: 4rem;
-        left: 4rem;
-      }
+    h2 {
+      font-size: 3.4rem;
+    }
+    .content {
+      height: 28rem;
+      margin-left: 16.66666667%;
+      flex-basis: 66.66666667%;
+      max-width: 66.66666667%;
+    }
   }
 }
 
 @media only screen and (min-width: $x-large) {
   .project {
-    height: 32rem;
     h2 {
-      padding: 0.5rem 4rem;
       font-size: 4rem;
     }
     a {
       font-size: 1.2rem;
     }
-
   }
 }

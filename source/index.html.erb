@@ -4,28 +4,46 @@ title: Bjørn Rostad
 
 <%= partial "layouts/header" %>
 
-<div class="container">
-
-  <div class="intro">
+<section class="intro">
+  <div class="container">
     <p>Hello. I design and build <span style="background-color: #c5f6fa">apps and websites</span> that are <span style="background-color: #c3fae8">delightful and easy to use</span>.</p>
   </div>
+</section>
 
-  <div class="project project-delectable">
-    <h4>App design</h4>
-    <h2>Delectable Wine</h2>
-    <%= link_to 'View Project', 'delectable.html', :class => 'chevron' %>
+<section class="project project-delectable">
+  <div class="container">
+    <div class="content">
+      <h4>App design</h4>
+      <h2>Delectable Wine</h2>
+      <div class="link-container">
+      <%= link_to 'View Project', 'delectable.html', :class => 'chevron' %>
+    </div>
+    </div>
   </div>
+</section>
 
-  <div class="project project-alchemist">
-    <h4>App design + code</h4>
-    <h2>Alchemist Cocktails</h2>
-    <%= link_to 'View Project', 'alchemist.html', :class => 'chevron' %>
+<section class="project project-alchemist">
+  <div class="container">
+    <div class="content">
+      <h4>App design + code</h4>
+      <h2>Alchemist Cocktails</h2>
+      <div class="link-container">
+
+      <%= link_to 'View Project', 'alchemist.html', :class => 'chevron' %>
+    </div>
   </div>
-
-  <div class="project project-banquet">
-    <h4>App + Website design</h4>
-    <h2>Banquet Shopping</h2>
-    <%= link_to 'View Project', 'banquet.html', :class => 'chevron' %>
   </div>
+</section>
 
-</div>
+
+<section class="project project-banquet">
+  <div class="container">
+    <div class="content">
+      <h4>App + Website design</h4>
+      <h2>Banquet Shopping</h2>
+      <div class="link-container">
+      <%= link_to 'View Project', 'banquet.html', :class => 'chevron' %>
+    </div>
+  </div>
+  </div>
+</section>
