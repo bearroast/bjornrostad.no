@@ -49,8 +49,21 @@
     text-align: center;
   }
 
-  img {
-    flex-basis: 100%;
-    max-width: 100%;
+}
+
+
+.gallery {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  picture {
+    flex-basis: 33.33333333%;
+    max-width: 33.33333333%;
+    img {
+      max-width: 100%;
+      margin: 0 2rem;
+    }
   }
 }
