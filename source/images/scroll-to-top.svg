@@ -5,9 +5,9 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="scroll-to-top" fill="#23303A">
+        <g id="scroll-to-top" fill="#495057">
             <g id="chevron" transform="translate(2.000000, 7.000000)">
-                <polygon transform="translate(14.798990, 9.042547) rotate(-90.000000) translate(-14.798990, -9.042547) " points="17.627417 9.04254651 6.3137085 20.356255 9.14213562 23.1846821 21.8700577 10.4567601 23.2842712 9.04254651 9.14213562 -5.09958911 6.3137085 -2.27116199 17.627417 9.04254651"></polygon>
+                <path d="M22.1421356,22.1421356 L4.14213562,22.1421356 L4.14213562,24.1421356 L23.1421356,24.1421356 L24.1421356,24.1421356 L24.1421356,4.14213562 L22.1421356,4.14213562 L22.1421356,22.1421356 Z" id="Combined-Shape" transform="translate(14.142136, 14.142136) rotate(-135.000000) translate(-14.142136, -14.142136) "></path>
             </g>
         </g>
     </g>

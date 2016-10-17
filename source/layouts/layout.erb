@@ -17,8 +17,9 @@
     <%= partial "layouts/nav" %>
       <div class="site-wrap">
         <div class="push-wrap">
-        <%= yield %>
-        <%= partial "layouts/footer" %>
+          <%= partial "layouts/header" %>
+          <%= yield %>
+          <%= partial "layouts/footer" %>
       </div>
     </div>
   </body>
