@@ -15,10 +15,10 @@
     }
   }
 
-  #nav-toggle {
+  #toggle {
     &:hover {
       span, span:after, span:before {
-        background-color: $gray-5;
+        background-color: $gray-4;
       }
     }
     span, span:after, span:before {
@@ -37,7 +37,7 @@
     &.is-active {
       &:hover {
         span:after, span:before {
-          background-color: gray-6;
+          background-color: $gray-6;
         }
       }
     }

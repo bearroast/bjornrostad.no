@@ -1,5 +1,8 @@
 .project-delectable {
   background: image-url('project-delectable-cover.jpg') $project-delectable no-repeat center;
+  @media only screen and (min-device-pixel-ratio: 1.3) {
+    background: image-url('project-delectable-cover@2x.jpg') $project-delectable no-repeat center;
+  }
   background-size: cover;
   ::selection {
     background: $project-delectable;
@@ -18,6 +21,9 @@
 
 .project-alchemist {
   background: image-url('project-alchemist-cover.jpg') $project-alchemist no-repeat center;
+  @media only screen and (min-device-pixel-ratio: 1.3) {
+    background: image-url('project-alchemist-cover@2x.jpg') $project-alchemist no-repeat center;
+  }
   background-size: cover;
   ::selection {
     background: $project-alchemist;
@@ -35,6 +41,9 @@
 
 .project-banquet {
   background: image-url('project-banquet-cover.jpg') $project-banquet no-repeat center;
+  @media only screen and (min-device-pixel-ratio: 1.3) {
+    background: image-url('project-banquet-cover@2x.jpg') $project-banquet no-repeat center;
+  }
   background-size: cover;
   ::selection {
     background: $project-banquet;
@@ -165,7 +174,7 @@
 @media only screen and (min-width: $large) {
   .project {
     h2 {
-      font-size: 3.6rem;
+      font-size: 3.2rem;
     }
     h4 {
       margin: 8rem 0 0;
@@ -184,9 +193,7 @@
 
 @media only screen and (min-width: $x-large) {
   .project {
-    h2 {
-      font-size: 4rem;
-    }
+
     h4 {
       margin: 10rem 0 0;
     }

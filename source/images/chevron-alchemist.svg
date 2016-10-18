@@ -1,12 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="10px" height="16px" viewBox="0 0 10 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
-    <title>chevron-alchemist</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="chevron-alchemist" fill="#1A0C30">
-            <polygon id="chevron" points="6.3137085 8.02127325 0.656854249 13.6781275 2.07106781 15.0923411 8.43502884 8.72838004 9.14213562 8.02127325 2.07106781 0.950205443 0.656854249 2.36441901 6.3137085 8.02127325"></polygon>
-        </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16">
+  <polygon fill="#1A0C31" fill-rule="evenodd" points="6.314 8.021 .657 13.678 2.071 15.092 8.435 8.728 9.142 8.021 2.071 .95 .657 2.364 6.314 8.021"/>
 </svg>
