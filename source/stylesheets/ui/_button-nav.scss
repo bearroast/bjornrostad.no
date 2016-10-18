@@ -42,18 +42,18 @@
   }
 
   &.is-active span:before {
-    background-color: $gray-5;
+    background-color: $gray-6;
   	transform: rotate(45deg) translate(5px, 8px);
   }
 
   &.is-active span:after {
-    background-color: $gray-5;
+    background-color: $gray-6;
   	transform: rotate(-45deg) translate(7px, -11px);
   }
   &.is-active {
     &:hover {
       span:after, span:before {
-        background-color: rgba($gray-5, 0.7);
+        background-color: rgba($gray-6, 0.7);
       }
       transition: opacity 0.2s ease;
     }
