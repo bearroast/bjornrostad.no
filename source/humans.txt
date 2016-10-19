@@ -1,0 +1,27 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+
+DESIGN & CODE
+----
+Bjørn Rostad / @bearrost / hi@bjornrostad.no
+
+
+TECH
+----
+Middleman / Static Site Generator / http://middlemanapp.com
+Sass / CSS pre-processor / http://sass-lang.com
+GitHub / Hosting & Git / https://github.com
+jQuery / JavaScript library / https://jquery.com
+
+
+TOOLS
+----
+Atom / Text editor / https://atom.io
+Sketch / Design tool / https://sketchapp.com
+Pixelmator / Photo editing / http://www.pixelmator.com
+
+
+THANKS
+----
+Unsplash / Free photos I've edited in Pixelmator / https://unsplash.com
