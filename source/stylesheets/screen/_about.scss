@@ -1,15 +1,13 @@
 .about {
   .home {
-    z-index: -1;
     &:link, &:visited {
       color: $gray-5;
-      border-bottom: none;
     }
     &:hover, &:active {
-      color: rgba($gray-5, .4);
-      font-weight: 500;
-      font-size: 1.2rem;
-      border-bottom: none;
+      color: rgba($gray-5, .7);
+    }
+    &:after {
+      background: image-url('prev-b.svg') no-repeat center;
     }
   }
 
@@ -41,16 +39,65 @@
     }
   }
 
+  span.title {
+    margin-left: 0;
+    flex-basis: 16.66666667%;
+    max-width: 16.66666667%;
+    text-align: right;
+    font-size: 0.7rem;
+    margin-top: 3.4rem;
+    text-transform: uppercase;
+    color: $gray-4;
+    letter-spacing: 2px;
+  }
+  h3 {
+    font-size: 1.2rem;
+    color: $gray-5;
+    letter-spacing: 0;
+    display: block;
+  }
+  h4 {
+    font-size: 0.7rem;
+    color: $gray-3;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
 
-.intro {
-  margin-left: 8.33333333%;
-  flex-basis: 83.33333333%;
-  max-width: 83.33333333%;
-  font-size: 1.4rem;
-  margin-top: 9rem;
-  margin-bottom: 7rem;
-  color: $gray-6;
+  .work, .projects, .education {
+    box-sizing: border-box;
+    display: flex;
+    flex: 1 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .list {
+    flex-basis: 75%;
+    max-width: 75%;
+    text-align: left;
+    .entry {
+      padding-left: 4rem;
+      margin: 3rem 0;
+
+    }
+  }
 }
 
 
+.about-me {
+  p {
+    margin-left: 16.66666667%;
+    flex-basis: 66.66666667%;
+    max-width: 66.66666667%;
+    font-size: 1.8rem;
+    margin-top: 14rem;
+    margin-bottom: 9rem;
+    color: $gray-6;
+
+  }
+}
+
+.resume {
+  padding: 6rem 0;
+  background-color: $soft-white;
 }
