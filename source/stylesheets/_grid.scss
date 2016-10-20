@@ -43,7 +43,7 @@ $x-large-padding: $x-large - 4rem;
 @media only screen and (min-width: $x-large) {
   .container {
     width: $x-large-padding;
-    padding-right: 3rem;
-    padding-left: 3rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
   }
 }

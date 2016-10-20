@@ -45,6 +45,7 @@
     animation-name: fadeInHeader;
     animation-fill-mode: both;
     margin: 0;
+    padding-left: 2rem;
   }
 }
 
@@ -80,14 +81,17 @@
 }
 
 @media only screen and (min-width: $medium) {
-  .masthead-text {
+  .masthead {
     h1 {
-      padding-right: 2rem;
-      padding-left: 0rem;
+      padding-right: 4rem;
+      padding-left: 4rem;
     }
     p {
       padding-right: 20rem;
-      padding-left: 0rem;
+      padding-left: 4rem;
+    }
+    img {
+      padding-left: 4rem;
     }
   }
 }

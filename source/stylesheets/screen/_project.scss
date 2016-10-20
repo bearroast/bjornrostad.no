@@ -1,28 +1,9 @@
 @import "screen/project-masthead";
 
-// .index {
-//   background-color: $soft-white;
-// }
-// .delectable_index {
-//   background-color: darken($project-delectable, 3%);
-//   ::selection {
-//     background-color: $project-delectable;
-//   }
-// }
-//
-// .alchemist_index {
-//   background-color: darken($project-alchemist, 2%);
-// }
-//
-// .banquet_index {
-//   background-color: darken($project-banquet, 2%);
-// }
-
-
 .project-overview {
   padding: 2rem 0;
   text-align: center;
-  border-bottom: 1px solid $gray-1;
+  border-bottom: 2px solid $gray-1;
   h5 {
     color: $gray-3;
     font-size: 0.8rem;
