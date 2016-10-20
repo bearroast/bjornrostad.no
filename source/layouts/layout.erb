@@ -38,5 +38,12 @@
       $("html, body").animate({ scrollTop: 0 }, "slow");
       return false;
     });
+
+    if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+      document.getElementById("imsg-desktop").style.display="none"
+    } else {
+      document.getElementById("imsg-ios").style.display="none"
+
+    }
   </script>
 </html>

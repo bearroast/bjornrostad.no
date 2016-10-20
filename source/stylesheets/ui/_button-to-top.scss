@@ -20,3 +20,11 @@ a#scroll-to-top {
     transition-duration: all 0.2s ease-in-out;
   }
 }
+
+@media only screen and (max-width: $small) {
+  a#scroll-to-top {
+    &:link, &:visited {
+    display: none;
+    }
+  }
+}
