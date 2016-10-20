@@ -40,10 +40,9 @@
     });
 
     if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
-      document.getElementById("imsg-desktop").style.display="none"
+      $(".imsg-desktop").hide();
     } else {
-      document.getElementById("imsg-ios").style.display="none"
-
+      $(".imsg-ios").hide();
     }
   </script>
 </html>
