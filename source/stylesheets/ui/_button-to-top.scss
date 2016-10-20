@@ -5,7 +5,7 @@ a#scroll-to-top {
     display: inline-block;
     position: fixed;
     bottom: 2.5rem;
-    right: 5rem;
+    right: 2.5rem;
     height: 32px;
     width: 32px;
     border-bottom: 0;
@@ -23,8 +23,32 @@ a#scroll-to-top {
 
 @media only screen and (max-width: $small) {
   a#scroll-to-top {
-    &:link, &:visited {
+    &:link, &:visited, &:hover, &:active {
     display: none;
     }
+  }
+}
+
+@media only screen and (min-width: $medium) {
+  a#scroll-to-top {
+      &:link, &:visited, &:hover, &:active {
+        right: 3.5rem;
+      }
+  }
+}
+
+@media only screen and (min-width: $large) {
+  a#scroll-to-top {
+      &:link, &:visited, &:hover, &:active {
+        right: 4rem;
+      }
+  }
+}
+
+@media only screen and (min-width: $large) {
+  a#scroll-to-top {
+      &:link, &:visited, &:hover, &:active {
+        right: 5rem;
+      }
   }
 }

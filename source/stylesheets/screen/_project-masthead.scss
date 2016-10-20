@@ -1,30 +1,24 @@
-.masthead {
-  align-items: center;
-  justify-content: center;
-}
-
 .aligner {
   display: flex;
-  align-items: center;
-  height: 100vh;
-  justify-content: center;
+  height: 100%;
 }
 
 .masthead-text {
   box-sizing: border-box;
   flex-basis: 100%;
+  padding: 4rem 2rem;
 }
 
 .masthead {
   h1 {
-    margin: 1rem 0;
+    margin: 4rem 0 2rem;
+    font-size: 1.6rem;
+    text-align: center;
     animation-delay: 0.4s;
     animation-duration: 1.8s;
     animation-name: fadeInHeader;
     animation-fill-mode: both;
     color: $white;
-    padding-right: 2rem;
-    padding-left: 2rem;
   }
 
   p {
@@ -32,13 +26,11 @@
     animation-duration: 1.8s;
     animation-name: fadeInHeader;
     animation-fill-mode: both;
-    margin: 0 0 6rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
     letter-spacing: 0px;
+    text-align: center;
     color: $gray-2;
-    padding-right: 18rem;
-    padding-left: 2rem;
   }
   img {
     animation-duration: 1s;
@@ -80,7 +72,21 @@
   }
 }
 
+
+@media only screen and (min-width: $small) {
+  .aligner {
+  }
+  .masthead {
+
+  }
+}
+
 @media only screen and (min-width: $medium) {
+  .aligner {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
   .masthead {
     h1 {
       padding-right: 4rem;
@@ -93,5 +99,16 @@
     img {
       padding-left: 4rem;
     }
+  }
+}
+@media only screen and (min-width: $large) {
+  .masthead {
+
+  }
+}
+
+@media only screen and (min-width: $x-large) {
+  .masthead {
+
   }
 }
