@@ -3,7 +3,7 @@ a#scroll-to-top {
     opacity: .8;
     background: transparent image-url('scroll-to-top.svg');
     display: inline-block;
-    position: fixed;
+    position: absolute;
     bottom: 2.5rem;
     right: 2.5rem;
     height: 32px;
