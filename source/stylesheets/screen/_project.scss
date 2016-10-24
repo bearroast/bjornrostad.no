@@ -2,7 +2,7 @@
 
 .project-overview {
   padding: 2rem 0;
-  text-align: center;
+  text-align: center;;
   border-bottom: 2px solid $gray-1;
 
 }
@@ -32,24 +32,29 @@
 .project-content {
   margin: 4rem 0;
   p {
+    text-align: left;
     margin-left: 16.66666667%;
     flex-basis: 66.66666667%;
     max-width: 66.66666667%;
   }
 
   h2 {
-    margin: 0 0 1rem;
     margin-left: 16.66666667%;
     flex-basis: 66.66666667%;
     max-width: 66.66666667%;
-    text-align: center;
-    font-size: 2rem;
+    text-align: left;
+    font-size: 1.6rem;
     font-weight: 400;
   }
 }
 
+.odd-bg {
+  padding: 4rem 0;
+  background: $soft-white;
+}
+
 .image-full {
-  margin: 0;
+  margin: 1rem 0 0;
   img { width: 100%; }
 }
 
@@ -64,7 +69,7 @@
     flex-basis: 100%;
     max-width: 100%;
     text-align: center;
-    margin: 0;
+    margin: 1rem 0 0;
     img {
       max-width: 100%;
       margin: 0;
@@ -81,12 +86,12 @@
   flex: 0 1 auto;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 2rem 0;
+  margin: 2rem auto 0;
   figure {
     flex-basis: 100%;
     max-width: 100%;
     text-align: center;
-    margin: 0 0 2rem;
+    margin: 0;
     img {
       max-width: 80%;
       margin: 0;
@@ -105,17 +110,10 @@
   }
 
   .gallery {
-    box-sizing: border-box;
-    display: flex;
-    flex: 0 1 auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 2rem 0;
     figure {
       flex-basis: 33.33333333%;
       max-width: 33.33333333%;
       text-align: center;
-      margin: 0;
       img {
         max-width: 90%;
         margin: 0;
@@ -133,6 +131,7 @@
     }
     span {
       font-size: 1rem;
+      margin: 0;
     }
   }
 }
