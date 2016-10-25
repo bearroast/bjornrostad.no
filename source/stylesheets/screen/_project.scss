@@ -1,7 +1,7 @@
 @import "screen/project-masthead";
 
 .project-overview {
-  padding: 1.5rem 0 1rem;
+  padding: 1rem 0;
   text-align: center;;
   border-bottom: 2px solid $gray-1;
 
@@ -22,7 +22,7 @@
   span {
     display: block;
     color: $gray-5;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 500;
     margin: 0 0 1rem;
   }
@@ -30,29 +30,32 @@
 }
 
 .project-content {
-  margin: 2rem 0;
+  margin: 2rem 0 0;
   p {
     text-align: left;
     flex-basis: 100%;
     max-width: 100%;
-    margin: 0 2rem;
+    margin: 0 2rem 2rem;
   }
 
   h2 {
     flex-basis: 100%;
     max-width: 100%;
     text-align: left;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 400;
-    margin: 0 2rem;
-
+    margin: 0 2rem 1rem;
   }
+}
+
+.last {
+  padding-bottom: 4rem;
 }
 
 .odd-bg {
   padding: 1rem 0;
   background: $soft-white;
-  p {
+  h2 {
     margin-top: 1rem;
   }
 }
@@ -84,7 +87,7 @@
   }
 
   .project-content {
-    margin: 4rem 0;
+    margin: 4rem 0 0;
     p {
       text-align: left;
       margin-left: 16.66666667%;
@@ -103,7 +106,7 @@
   }
 
   .odd-bg {
-    p {
+    h2 {
       padding: 2rem 0 0;
     }
   }
