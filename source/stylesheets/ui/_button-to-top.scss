@@ -29,6 +29,16 @@ a#scroll-to-top {
   }
 }
 
+@media only screen and (min-width: $small) {
+  a#scroll-to-top {
+      &:link, &:visited, &:hover, &:active {
+        right: 3.5rem;
+        bottom: 4.7rem
+
+      }
+  }
+}
+
 @media only screen and (min-width: $medium) {
   a#scroll-to-top {
       &:link, &:visited, &:hover, &:active {

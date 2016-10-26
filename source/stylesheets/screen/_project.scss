@@ -14,15 +14,16 @@
   h5 {
     display: block;
     color: $gray-3;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
   }
+
   span {
     display: block;
     color: $gray-5;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 500;
     margin: 0 0 1rem;
   }
@@ -30,12 +31,12 @@
 }
 
 .project-content {
-  margin: 2rem 0 0;
+  padding: 2rem 0 1rem;
   p {
     text-align: left;
     flex-basis: 100%;
     max-width: 100%;
-    margin: 0 2rem 2rem;
+    margin: 0 2rem 2rem 2rem;
   }
 
   h2 {
@@ -44,7 +45,7 @@
     text-align: left;
     font-size: 1.2rem;
     font-weight: 400;
-    margin: 0 2rem 1rem;
+    margin: 0 2rem 1rem 2rem;
   }
 }
 
@@ -52,12 +53,8 @@
   padding-bottom: 4rem;
 }
 
-.odd-bg {
-  padding: 1rem 0;
+.odd {
   background: $soft-white;
-  h2 {
-    margin-top: 1rem;
-  }
 }
 
 .gallery {
@@ -70,7 +67,7 @@
     flex-basis: 100%;
     max-width: 100%;
     text-align: center;
-    margin: 1rem 0 0;
+    margin: 0;
     img {
       max-width: 100%;
       margin: 0;
@@ -86,8 +83,15 @@
     max-width: 33.33333333%;
   }
 
+  .project-overview {
+    padding: 2rem 0;
+    span {
+      margin: 0;
+    }
+  }
+
   .project-content {
-    margin: 4rem 0 0;
+    padding: 2rem 0;
     p {
       text-align: left;
       margin-left: 16.66666667%;
@@ -102,22 +106,6 @@
       text-align: left;
       font-size: 1.6rem;
       font-weight: 400;
-    }
-  }
-
-  .odd-bg {
-    h2 {
-      padding: 2rem 0 0;
-    }
-  }
-  .project-overview {
-    padding: 2rem 0;
-    h5 {
-      font-size: 0.8rem;
-    }
-    span {
-      font-size: 1rem;
-      margin: 0;
     }
   }
 }

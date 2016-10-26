@@ -10,10 +10,23 @@
   }
 }
 
+@keyframes fadeInBadge {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 2rem, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
 @keyframes fadeInNav {
   from {
     opacity: 0;
-    transform: translate3d(0, -3rem, 0);
+    transform: translate3d(0, -1rem, 0);
   }
 
   to {
