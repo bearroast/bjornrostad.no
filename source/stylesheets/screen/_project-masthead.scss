@@ -1,4 +1,8 @@
 .scroll-indicator {
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-name: fadeInScroll;
+  animation-fill-mode: both;
   position: absolute;
   bottom: 1.4rem;
   left: 50%;
