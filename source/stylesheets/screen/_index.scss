@@ -2,15 +2,14 @@
 
 .index {
   .home {
-    z-index: -1;
+    z-index: 1;
     &:link, &:visited {
       color: $gray-5;
       border-bottom: none;
     }
     &:hover, &:active {
-      color: rgba($gray-5, .4);
+      color: $gray-4;
       font-weight: 500;
-      font-size: 1.2rem;
       border-bottom: none;
     }
   }
@@ -50,9 +49,10 @@
     animation-duration: 1s;
     animation-name: fadeInHeader;
     animation-fill-mode: both;
-    margin-left: 8.33333333%;
-    flex-basis: 83.33333333%;
-    max-width: 83.33333333%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    flex-basis: 100%;
+    max-width: 100%;
     font-size: 1.4rem;
     margin-top: 9rem;
     margin-bottom: 7rem;
@@ -61,7 +61,11 @@
 }
 
 @media only screen and (min-width: $small) {
-
+  .intro p {
+    margin-left: 8.33333333%;
+    flex-basis: 83.33333333%;
+    max-width: 83.33333333%;
+  }
 }
 
 @media only screen and (min-width: $medium) {

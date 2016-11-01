@@ -1,10 +1,11 @@
 .about {
   .home {
+    z-index: 1;
     &:link, &:visited {
       color: $gray-5;
     }
     &:hover, &:active {
-      color: rgba($gray-5, .7);
+      color: $gray-4;
     }
     &:after {
       background: image-url('prev-b.svg') no-repeat center;
@@ -40,84 +41,167 @@
   }
 }
 
+.bio, .interests, .work, .education {
+  animation-delay: 0.2s;
+  animation-duration: 1s;
+  animation-name: fadeInHeader;
+  animation-fill-mode: both;
+}
+
+.interests, .education, .work {
+  padding: 2rem 0 0;
+}
+
+
 .bio {
-  margin: 14rem 0 6rem;
   .entry {
-    margin-left: 8.33333333%;
-    flex-basis: 83.33333333%;
-    max-width: 83.33333333%;
-    font-size: 1.8rem;
+    flex-basis: 100%;
+    max-width: 100%;
+    font-size: 1.2rem;
+    margin-top: 6rem;
     p {
-      margin: 0 0 3rem;
+      margin: 0 2rem 2rem 2rem;
     }
   }
 }
 
-.interests {
-  margin: 4rem 0 2rem;
-}
-
-ul {
-  list-style-type: none;
-}
 .title {
   margin-left: 0;
-  flex-basis: 16.66666667%;
-  max-width: 16.66666667%;
-  text-align: right;
+  flex-basis: 100%;
+  max-width: 100%;
   h2 {
     font-size: 0.8rem;
     text-transform: uppercase;
-    color: $gray-4;
+    color: $tint-2;
     letter-spacing: 2px;
-    margin: 0;
-    padding: 0.5rem 0 0 0;
-
+    margin: 0 2rem 2rem 2rem;
   }
 }
 
 .entry {
-  margin-left: 8.33333333%;
-  flex-basis: 66.66666667%;
-  max-width: 66.66666667%;
+  margin-left: 0;
+  flex-basis: 100%;
+  max-width: 100%;
   text-align: left;
   ul {
     display: flex;
     flex-wrap: wrap;
+    list-style-type: none;
   }
   li {
     margin: 0 0 2rem 0;
-    flex-basis: 50%;
-    max-width: 50%;
-    h3, p {
-      margin-right: 2rem;
-    }
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  p {
+    margin: 0 2rem;
   }
   h3 {
     font-size: 1.2rem;
+    margin: 0 2rem 0.5rem 2rem;
   }
   h6 {
     font-weight: 500;
     color: $gray-4;
     font-size: .7rem;
+    margin: 0 2rem 0.5rem 2rem;
   }
 }
 
-.resume {
-  padding: 4rem 0 2rem;
+.work {
   background-color: $soft-white;
-  h2 {
-    padding: .4rem 0 0 0;
+  li {
+    margin: 0 0 2rem 0;
+    flex-basis: 100%;
+    max-width: 100%;
   }
+}
+
+
+
+@media only screen and (min-width: $small) {
+
+  .interests, .education, .work {
+    padding: 4rem 0 2rem;
+  }
+
+  .bio {
+    .entry {
+      font-size: 1.4rem;
+      margin-top: 10rem;
+    }
+  }
+}
+
+@media only screen and (min-width: $medium) {
+  .bio {
+    .entry {
+      font-size: 1.8rem;
+      margin-top: 14rem;
+      p {
+        margin: 0 2rem 3rem 2rem;
+      }
+    }
+  }
+
+  .title {
+    flex-basis: 16.66666667%;
+    max-width: 16.66666667%;
+    text-align: right;
+    h2 {
+      margin: 0;
+      padding: 0.5rem 0 0 0;
+    }
+  }
+
+  .entry {
+    margin-left: 8.33333333%;
+    flex-basis: 66.66666667%;
+    max-width: 66.66666667%;
+
+    p {
+      margin: 0 1rem 0 0;
+    }
+    h3 {
+      margin: 0 1rem 0 0;
+    }
+    h6 {
+      margin: 0 1rem 0 0;
+    }
+  }
+}
+
+@media only screen and (min-width: $large) {
+  .bio {
+    .entry {
+      margin-left: 25%;
+      flex-basis: 66.66666667%;
+      max-width: 66.66666667%;
+      font-size: 1.8rem;
+      margin-top: 14rem;
+      p {
+        margin: 0 0 3rem;
+      }
+    }
+  }
+  .entry {
     li {
-      margin: 0 0 2rem 0;
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+  }
+  .work {
+    li {
       flex-basis: 100%;
       max-width: 100%;
+    }
   }
 }
 
-
-.education {
-  padding: 4rem 0;
-
+@media only screen and (min-width: $x-large) {
+  .bio {
+    .entry {
+      font-size: 2rem;
+    }
+  }
 }

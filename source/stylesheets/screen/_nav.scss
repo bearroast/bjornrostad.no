@@ -67,7 +67,7 @@
   }
 
   .active {
-    border-bottom: 1px solid $gray-4 !important;
+    border-bottom: 2px solid $tint-2 !important;
   }
 
   h6 {
@@ -79,8 +79,8 @@
 
 // Enter
 .show-nav #nav {
-  background: $soft-white;
-  z-index: 1;
+  background: $white;
+  z-index: 10;
 	transition: background 0.3s cubic-bezier(0.3, 0.6, 0.55, 1.000);
 	transition-delay: 0s;
 }
@@ -136,7 +136,7 @@
 // Exit
 .hide-nav #nav {
   background: transparent;
-  z-index: 1;
+  z-index: 10;
   transition: background 0.3s cubic-bezier(0.3, 0.6, 0.55, 1.000);
   transition-delay: .4s;
 }
