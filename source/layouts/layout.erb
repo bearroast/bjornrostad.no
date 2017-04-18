@@ -15,29 +15,14 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <%= partial "layouts/nav" %>
-      <div class="site-wrap">
-        <div class="push-wrap">
-          <%= partial "layouts/header" %>
-          <%= yield %>
-          <%= partial "layouts/footer" %>
-      </div>
+    <div class="site-wrap">
+      <%= yield %>
     </div>
   </body>
 
   <%= partial "layouts/analytics" %>
 
   <script>
-    var nav = document.getElementById('toggle');
-    nav.addEventListener('click', function (e) {
-        nav.classList.toggle('is-active');
-        e.preventDefault();
-    });
-
-    $("a[href='#scroll-to-top']").click(function() {
-      $("html, body").animate({ scrollTop: 0 }, "slow");
-      return false;
-    });
 
     if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
       $(".imsg-desktop").hide();
