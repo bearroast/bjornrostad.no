@@ -44,6 +44,9 @@
 }
 
 .intro {
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+
   p {
     animation-delay: 0.2s;
     animation-duration: 1s;
@@ -53,14 +56,17 @@
     margin-right: 2rem;
     flex-basis: 100%;
     max-width: 100%;
-    font-size: 1.4rem;
-    margin-top: 9rem;
-    margin-bottom: 7rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
     color: $gray-6;
   }
 }
 
 @media only screen and (min-width: $small) {
+  .intro {
+    margin-top: 8rem;
+    margin-bottom: 6rem;
+  }
   .intro p {
     margin-left: 8.33333333%;
     flex-basis: 83.33333333%;
@@ -69,17 +75,24 @@
 }
 
 @media only screen and (min-width: $medium) {
+  .intro {
+    margin-top: 12rem;
+    margin-bottom: 8rem;
+  }
   .intro p {
     font-size: 1.6rem;
-    margin-top: 12rem;
   }
 }
 
 @media only screen and (min-width: $large) {
+  .intro {
+    margin-top: 12rem;
+    margin-bottom: 8rem;
+  }
   .intro p {
     font-size: 1.8rem;
-    margin-top: 14rem;
-    margin-bottom: 12rem;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
     margin-left: 16.66666667%;
     flex-basis: 66.66666667%;
     max-width: 66.66666667%;
@@ -87,6 +100,10 @@
 }
 
 @media only screen and (min-width: $x-large) {
+  .intro {
+    margin-top: 12rem;
+    margin-bottom: 8rem;
+  }
   .intro p {
     font-size: 2rem;
   }
