@@ -29,17 +29,16 @@ body {
 
 .site-wrap {
   margin: 0 auto;
-  width: 80rem;
-  padding: 6rem 0 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 3rem;
 }
 
 ul {
   list-style: none;
   margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
-  box-sizing: border-box;
-  column-count: 2;
+  padding: 0 0 8rem 0;
+  column-count: 1;
 }
 
 li {
@@ -48,77 +47,90 @@ li {
   font-weight: 400;
   position: relative;
   height: 10rem;
-}
+  page-break-inside: avoid;
+  break-inside: avoid-column;
+ }
 
 
 span.color-block {
   position: absolute;
   display: block;
   left: 0;
-  top: 0;
+  top: .8rem;
   width: 2rem;
   height: 2rem;
   border-radius: 0.5rem;
 }
 
-h3, h4 {
-  margin-left: 3rem;
+h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: $gray-5;
+  margin: 8rem 0 4rem;
 }
 
 h3 {
   font-size: 2.4rem;
   font-weight: 400;
+  margin: 0 0 0 4rem;
 }
 
 h4 {
   font-size: 1.4rem;
   font-weight: 600;
+  margin: 0 0 0 4rem;
+  letter-spacing: 1px;
   text-transform: uppercase;
   color: $gray-4;
 }
 
-.dropbox {
-  background: $project-paper;
-}
+.dropbox { background: $project-dropbox; }
+.liquid { background: $project-liquid; }
+.delectable { background: $project-delectable; }
+.banquet { background: $project-banquet; }
+.ct { background: $project-ct; }
+.wheelz { background: $project-wheelz; }
+
 
 ::selection { background: $yellow; }
 
 p {
-  font-size: 3.5rem;
+  font-size: 2.8rem;
   font-weight: 500;
   letter-spacing: 0px;
+  margin: 4rem 0 0;
 }
 
-p { margin: 6rem 0 0; }
 
 a:link, a:visited {
-  color: $blue-7;
+  color: $blue-9;
   text-decoration: none;
   transition: all 0.2s ease;
 }
 
 a:hover, a:active {
-  color: $blue-9;
+  color: $blue-7;
   transition: all 0.2s ease;
 }
 
-$small: 38rem;
-$small-padding: $small - 2rem;
-
-
-$large: 68rem;
-$large-padding: $large - 2rem;
+$small: 80rem;
 
 @media only screen and (min-width: $small) {
-  .container {
-    width: $small-padding;
+  .site-wrap {
+    margin: 0 auto;
+    width: 80rem;
+    padding: 6rem 0 0;
   }
-}
 
-@media only screen and (min-width: $large) {
-  .container {
-    width: $large-padding;
-    padding-right: 2rem;
-    padding-left: 2rem;
+  p {
+    font-size: 3.6rem;
+    margin: 6rem 0 0;
+  }
+
+  ul {
+    list-style: none;
+    margin-top: 0;
+    padding: 0 0 16rem 0;
+    column-count: 2;
   }
 }
