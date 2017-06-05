@@ -4,8 +4,8 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title><%= current_page.data.title || "Bjørn Rostad designs apps and websites" %></title>
-    <meta content="Bjørn Rostad is a designer" name="description">
+    <title><%= current_page.data.title || "Bjørn Rostad" %></title>
+    <meta content="Bjørn Rostad" name="description">
     <meta content="Bjørn Rostad" name="author">
     <link rel="author" href="humans.txt">
 
@@ -14,35 +14,9 @@
     <%= javascript_include_tag 'all'  %>
   </head>
 
-  <body class="<%= page_classes %>">
-    <%= partial "layouts/nav" %>
-      <div class="site-wrap">
-        <div class="push-wrap">
-          <%= partial "layouts/header" %>
-          <%= yield %>
-          <%= partial "layouts/footer" %>
-      </div>
-    </div>
+  <body class="wrap">
+      <%= yield %>
   </body>
 
   <%= partial "layouts/analytics" %>
-
-  <script>
-    var nav = document.getElementById('toggle');
-    nav.addEventListener('click', function (e) {
-        nav.classList.toggle('is-active');
-        e.preventDefault();
-    });
-
-    $("a[href='#scroll-to-top']").click(function() {
-      $("html, body").animate({ scrollTop: 0 }, "slow");
-      return false;
-    });
-
-    if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
-      $(".imsg-desktop").hide();
-    } else {
-      $(".imsg-ios").hide();
-    }
-  </script>
-</html>
+</html
