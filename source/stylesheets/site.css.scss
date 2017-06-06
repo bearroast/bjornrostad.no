@@ -17,7 +17,8 @@ html { font-size: 16px; }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif !important;
-  color: $gray-8;
+  color: $text;
+  background: $off;
   line-height: 1.5;
   font-weight: 400;
   text-rendering: optimizelegibility;
@@ -35,58 +36,56 @@ body {
 h1 {
   font-weight: 400;
   font-size: 2.2rem;
-  letter-spacing: 0;
+  letter-spacing: 1px;
   line-height: 3.5rem;
-  margin-top: 14rem;
-}
-
-a:link, a:visited {
-  color: $gray-8;
-  text-decoration: underline;
-  transition: all 0.2s ease;
-}
-
-a:hover, a:active {
-  color: #1b6ec2;
-  transition: all 0.2s ease;
+  margin-top: 10rem;
+  color: $tint;
 }
 
 ol {
   list-style: none;
   width: 100%;
-  margin: 6rem 0 0;
+  margin: 4rem 0 0;
 }
 
 li {
   font-size: 1.25rem;
-  padding: 1.4rem 0;
-  border-bottom: 1px solid #DFE0E0;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid $border;
   vertical-align: middle;
+  span {
+    font-size: .9rem;
+    padding: .4rem 0 0 0;
+    float: right;
+    font-family: Menlo, monospace;
+    color: $light-text;
+  }
 }
 
 li:last-of-type {
   border-bottom: none;
 }
 
-span {
-  font-size: .9rem;
-  padding: .4rem 0 0 0;
-  float: right;
-  font-family: monospace;
-  color: #9CA5AE;
-}
 
 aside {
   position: fixed;
-  background: #007AF5;
+  background: $tint;
   width: 5rem;
   height: 100%;
   right: 0;
   top: 0;
+  animation-delay: 1.2s;
+  animation-duration: .6s;
+  animation-name: aside;
+  animation-fill-mode: both;
   p {
     display: block;
     position: absolute;
-    color: white;
+    color: $off;
+    font-size: .7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
     top: 50%;
     left: 50%;
     width: 100vh;
@@ -95,14 +94,30 @@ aside {
     text-align: center;
   }
   a:link, a:visited {
-    color: white;
+    color: $off;
     text-decoration: none;
     transition: all 0.2s ease;
   }
 
   a:hover, a:active {
-    color: white;
+    color: rgba($off, .5);
     transition: all 0.2s ease;
   }
+  span {
+    padding: 0 .6rem;
+    color: rgba($off,.4);
+  }
 
+}
+
+@keyframes aside {
+  from {
+    opacity: 0;
+    transform: translate3d(5rem, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
