@@ -14,9 +14,18 @@
     <%= javascript_include_tag 'all'  %>
   </head>
 
-  <body class="wrap">
+  <body>
       <%= yield %>
   </body>
 
+  <script>
+  
+    if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+      $(".imsg-desktop").hide();
+    } else {
+      $(".imsg-ios").hide();
+    }
+
+  </script>
   <%= partial "layouts/analytics" %>
 </html

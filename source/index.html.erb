@@ -2,8 +2,14 @@
 title: Bjørn Rostad
 ---
 
-<h1>Bjørn Rostad is a designer working on Dropbox Paper.</h1>
+<div class="container">
+  <div class="frame">
 
-<footer>
-  <%= link_to 'hi@bjornrostad.no', 'mailto:hi@bjornrostad.no' %> <span>·</span>  <%= link_to 'iMessage', 'imessage://hi@bjornrostad.no' %>
-</footer>
+  </div>
+
+  <h1>Bjørn Rostad is a designer working on Dropbox Paper.</h1>
+
+  <footer>
+    <%= link_to 'hi@bjornrostad.no', 'mailto:hi@bjornrostad.no' %> <span>/</span>  <%= link_to 'iMessage', 'imessage://hi@bjornrostad.no', :class => "imsg-desktop" %><%= link_to 'iMessage', 'sms:hi@bjornrostad.no', :class => "imsg-ios" %>
+  </footer>
+</div>

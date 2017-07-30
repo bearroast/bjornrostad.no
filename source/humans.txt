@@ -19,9 +19,3 @@ TOOLS
 ----
 Atom / Text editor / https://atom.io
 Sketch / Design tool / https://sketchapp.com
-Pixelmator / Photo editing / http://www.pixelmator.com
-
-
-THANKS
-----
-Unsplash / Free photos I've edited in Pixelmator / https://unsplash.com
